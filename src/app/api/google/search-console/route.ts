@@ -9,7 +9,7 @@ export async function GET() {
 
         // Fetch search analytics data
         const searchData = await fetchSearchAnalytics(searchConsole, {
-            siteUrl: process.env.GOOGLE_SITE_URL || '',
+            siteUrl: process.env.SITE_URL || '',
             startDate: '2024-01-01',
             endDate: '2024-01-31',
             dimensions: ['date', 'query', 'page'],

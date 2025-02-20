@@ -1,6 +1,6 @@
 import { logger } from '@/utils/logger';
 import { saveToJsonFile } from './utils';
-import { AnalyticsSession } from './types';
+import { AnalyticsResponse } from './types';
 import { BetaAnalyticsDataClient } from '@google-analytics/data';
 
 const propertyId = process.env.GOOGLE_PROPERTY_ID;
@@ -9,6 +9,15 @@ const analyticsDataClient = new BetaAnalyticsDataClient();
 
 async function runReport() {
     try {
+        if (!propertyId) {
+            throw new Error('GOOGLE_PROPERTY_ID environment variable is not set');
+        }
+
+        logger.info('Fetching Google Analytics data', {
+            propertyId: propertyId,
+            dateRange: '2024-01-01 to 2025-01-31'
+        });
+
         const [response] = await analyticsDataClient.runReport({
             property: `properties/${propertyId}`,
             dateRanges: [
@@ -41,7 +50,7 @@ async function runReport() {
         });
 
         // Create a map to store aggregated session data
-        const sessionMap: Record<string, AnalyticsSession> = {};
+        const sessionMap: AnalyticsResponse = {};
 
         response.rows?.forEach((row) => {
             // Create a unique session identifier
@@ -79,7 +88,7 @@ async function runReport() {
                 sessionMap[sessionId].events.push(eventName);
             }
 
-            // Update metrics with latest values (they should be the same for all events in a session)
+            // Update metrics with latest values
             sessionMap[sessionId].metrics = {
                 totalUsers: parseInt(row.metricValues?.[0]?.value || '0', 10),
                 newUsers: parseInt(row.metricValues?.[1]?.value || '0', 10),
@@ -94,16 +103,22 @@ async function runReport() {
         });
 
         // Log aggregated data
-        logger.info('Aggregated Analytics Data:');
-        Object.values(sessionMap).forEach((session) => {
-            logger.info(JSON.stringify(session, null, 2));
+        logger.info('Aggregated Analytics Data:', {
+            sessionCount: Object.keys(sessionMap).length,
+            sampleSession: Object.values(sessionMap)[0] || null
         });
 
         // Save data to JSON file
         await saveToJsonFile(sessionMap);
 
     } catch (error) {
-        logger.error('Error running report:', error instanceof Error ? error.message : String(error));
+        const errorMessage = error instanceof Error ? error.message : String(error);
+        logger.error('Error running analytics report:', {
+            error: errorMessage,
+            stack: error instanceof Error ? error.stack : undefined,
+            propertyId: propertyId || '[MISSING]'
+        });
+        throw error;
     }
 }
 

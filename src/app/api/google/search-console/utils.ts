@@ -1,18 +1,23 @@
 import { google } from 'googleapis';
 import { logger } from '@/utils/logger';
+import { saveToJsonFile as saveData } from '@/utils/dataSaving';
 import { SearchAnalyticsResponse, SearchConsoleQueryParams, SearchConsoleClient } from './types';
-import fs from 'fs';
-import path from 'path';
+
+// Interface for Google API error response
+interface GoogleApiError extends Error {
+    response?: {
+        data: unknown;
+    };
+}
 
 // Initialize Google Auth
 export const initializeSearchConsoleClient = async (): Promise<SearchConsoleClient> => {
     try {
-
         // Validate environment variables
         const envVars = {
             GOOGLE_SERVICE_ACCOUNT_EMAIL: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
             GOOGLE_PRIVATE_KEY: process.env.GOOGLE_PRIVATE_KEY,
-            GOOGLE_SITE_URL: process.env.GOOGLE_SITE_URL,
+            SITE_URL: process.env.SITE_URL,
         };
 
         // Check all required environment variables
@@ -46,7 +51,7 @@ export const initializeSearchConsoleClient = async (): Promise<SearchConsoleClie
             envVarsStatus: {
                 email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL ? 'present' : 'missing',
                 privateKey: process.env.GOOGLE_PRIVATE_KEY ? 'present' : 'missing',
-                siteUrl: process.env.GOOGLE_SITE_URL ? 'present' : 'missing'
+                siteUrl: process.env.SITE_URL ? 'present' : 'missing'
             }
         });
         throw error;
@@ -133,53 +138,28 @@ export const fetchSearchAnalytics = async (
                 ...params,
                 siteUrl: params.siteUrl.replace(/key=[^&]+/, 'key=REDACTED')
             },
-            googleApiError: error instanceof Error && 'response' in error ?
-                (error as any).response?.data : undefined
+            googleApiError: error instanceof Error && isGoogleApiError(error) ?
+                error.response?.data : undefined
         });
         throw error;
     }
 };
 
+// Type guard for Google API error
+function isGoogleApiError(error: Error): error is GoogleApiError {
+    return 'response' in error;
+}
+
 // Save data to JSON file
-export const saveToJsonFile = async (data: SearchAnalyticsResponse) => {
-    try {
-        // Create nested directory structure if it doesn't exist
-        const baseDir = path.join(process.cwd(), 'src', 'data', 'google', 'search-console');
-        if (!fs.existsSync(baseDir)) {
-            fs.mkdirSync(baseDir, { recursive: true });
-            logger.debug(`Created directory structure`, { path: baseDir });
+export const saveToJsonFile = async (data: SearchAnalyticsResponse): Promise<string> => {
+    return await saveData(data, {
+        baseDir: 'google/search-console',
+        filePrefix: 'search-analytics',
+        customMetadata: {
+            dataType: 'search-analytics',
+            aggregationType: data.responseAggregationType,
+            dimensions: data.rows?.[0]?.keys.length || 0,
+            metrics: ['clicks', 'impressions', 'ctr', 'position']
         }
-
-        // Create timestamp for filename
-        const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-        const fileName = `${timestamp}-search-console-data.json`;
-        const filePath = path.join(baseDir, fileName);
-
-        // Add metadata to the saved data
-        const dataWithMetadata = {
-            metadata: {
-                timestamp: new Date().toISOString(),
-                rowCount: data.rows?.length || 0,
-                aggregationType: data.responseAggregationType,
-                dimensions: data.rows?.[0]?.keys.length || 0
-            },
-            data
-        };
-
-        fs.writeFileSync(filePath, JSON.stringify(dataWithMetadata, null, 2));
-        logger.info('Search Console data saved', {
-            path: `src/data/google/search-console/${fileName}`,
-            stats: {
-                rowCount: data.rows?.length || 0,
-                fileSize: fs.statSync(filePath).size
-            }
-        });
-    } catch (error) {
-        const errorMessage = error instanceof Error ? error.message : String(error);
-        logger.error('Failed to save Search Console data', {
-            error: errorMessage,
-            stack: error instanceof Error ? error.stack : undefined
-        });
-        throw error;
-    }
+    });
 }; 
