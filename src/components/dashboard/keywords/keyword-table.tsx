@@ -1,8 +1,8 @@
 import { formatter } from "@/utils/format";
 import { KeywordAnalytics } from "@/types/analytics";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 interface KeywordTableProps {
     data?: KeywordAnalytics;
@@ -16,7 +16,7 @@ export function KeywordTable({ data, loading = false }: KeywordTableProps) {
                 <CardHeader>
                     <CardTitle>Keyword Performance</CardTitle>
                 </CardHeader>
-                <CardContent className="flex items-center justify-center py-4">
+                <CardContent className="h-[400px] flex items-center justify-center py-4">
                     <p className="text-muted-foreground">Loading keyword data...</p>
                 </CardContent>
             </Card>
@@ -29,21 +29,29 @@ export function KeywordTable({ data, loading = false }: KeywordTableProps) {
 
     return (
         <Card className="dark:bg-accent">
-            <CardHeader className="flex flex-col gap-2 items-center justify-between space-y-0 pb-2">
-                <CardTitle>Keyword Performance</CardTitle>
-                <p className="text-sm text-muted-foreground">
-                    Top keywords driving traffic
-                </p>
+            <CardHeader>
+                <div className="flex items-center justify-between">
+                    <div>
+                        <CardTitle>Keyword Performance</CardTitle>
+                        <p className="text-sm text-muted-foreground mt-1">
+                            Top keywords driving traffic
+                        </p>
+                    </div>
+                </div>
+            </CardHeader>
+            <CardContent>
                 <Tabs defaultValue="branded" className="w-full">
-                    <TabsList className="grid w-full grid-cols-2">
-                        <TabsTrigger value="branded">Branded</TabsTrigger>
-                        <TabsTrigger value="nonBranded">Non-Branded</TabsTrigger>
-                    </TabsList>
-                    <TabsContent value="branded" className="mt-2">
+                    <div className="flex items-center justify-between mb-4">
+                        <TabsList className="bg-background dark:bg-background">
+                            <TabsTrigger value="branded" className="data-[state=active]:bg-accent">Branded</TabsTrigger>
+                            <TabsTrigger value="nonBranded" className="data-[state=active]:bg-accent">Non-Branded</TabsTrigger>
+                        </TabsList>
+                    </div>
+                    <TabsContent value="branded" className="mt-0">
                         <div className="h-[400px] overflow-auto relative">
                             <Table>
                                 <TableHeader className="sticky top-0 bg-background dark:bg-accent z-10">
-                                    <TableRow>
+                                    <TableRow className="border-b dark:border-black">
                                         <TableHead>Keyword</TableHead>
                                         <TableHead className="text-right">Clicks</TableHead>
                                         <TableHead className="text-right">Impressions</TableHead>
@@ -53,7 +61,7 @@ export function KeywordTable({ data, loading = false }: KeywordTableProps) {
                                 </TableHeader>
                                 <TableBody>
                                     {data.branded.map((item, index) => (
-                                        <TableRow key={index}>
+                                        <TableRow key={index} className="border-b dark:border-black">
                                             <TableCell className="font-medium">{item.keyword}</TableCell>
                                             <TableCell className="text-right">{formatter('number')(item.clicks)}</TableCell>
                                             <TableCell className="text-right">{formatter('number')(item.impressions)}</TableCell>
@@ -69,7 +77,7 @@ export function KeywordTable({ data, loading = false }: KeywordTableProps) {
                         <div className="h-[400px] overflow-auto relative">
                             <Table>
                                 <TableHeader className="sticky top-0 bg-background dark:bg-accent z-10">
-                                    <TableRow>
+                                    <TableRow className="border-b dark:border-black">
                                         <TableHead>Keyword</TableHead>
                                         <TableHead className="text-right">Clicks</TableHead>
                                         <TableHead className="text-right">Impressions</TableHead>
@@ -79,7 +87,7 @@ export function KeywordTable({ data, loading = false }: KeywordTableProps) {
                                 </TableHeader>
                                 <TableBody>
                                     {data.nonBranded.map((item, index) => (
-                                        <TableRow key={index}>
+                                        <TableRow key={index} className="border-b dark:border-black">
                                             <TableCell className="font-medium">{item.keyword}</TableCell>
                                             <TableCell className="text-right">{formatter('number')(item.clicks)}</TableCell>
                                             <TableCell className="text-right">{formatter('number')(item.impressions)}</TableCell>
@@ -92,7 +100,7 @@ export function KeywordTable({ data, loading = false }: KeywordTableProps) {
                         </div>
                     </TabsContent>
                 </Tabs>
-            </CardHeader>
+            </CardContent>
         </Card>
     );
 } 

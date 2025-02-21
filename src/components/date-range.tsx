@@ -36,6 +36,8 @@ export function DatePickerWithRange({
             newRange = { from: addDays(today, -7), to: today }
         } else if (value === "last30") {
             newRange = { from: addDays(today, -30), to: today }
+        } else if (value === "last90") {
+            newRange = { from: addDays(today, -90), to: today }
         } else if (value === "ytd") {
             newRange = { from: new Date(today.getFullYear(), 0, 1), to: today }
         } else {
@@ -82,6 +84,7 @@ export function DatePickerWithRange({
                             <SelectItem value="today">Today</SelectItem>
                             <SelectItem value="last7">Last 7 Days</SelectItem>
                             <SelectItem value="last30">Last 30 Days</SelectItem>
+                            <SelectItem value="last90">Last 90 Days</SelectItem>
                             <SelectItem value="ytd">YTD</SelectItem>
                         </SelectContent>
                     </Select>

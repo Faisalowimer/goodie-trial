@@ -1,12 +1,12 @@
 "use client"
 
 import * as React from "react"
-import { SearchPerformanceChartProps } from "../types"
-import { Area, AreaChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis, Tooltip, Legend } from "recharts"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { format } from "date-fns"
 import { formatter } from "@/utils/format"
 import { TrendingDown } from "lucide-react"
+import { SearchPerformanceChartProps } from "../types"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Area, AreaChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis, Tooltip, Legend } from "recharts"
 
 export function SearchPerformanceChart({ data, loading = false }: SearchPerformanceChartProps) {
     if (loading || !data) {
@@ -109,8 +109,8 @@ export function SearchPerformanceChart({ data, loading = false }: SearchPerforma
                                 type="monotone"
                                 dataKey="impressions"
                                 name="Impressions"
-                                stroke="hsl(var(--secondary))"
-                                fill="hsl(var(--secondary))"
+                                stroke="hsl(var(--chart-2))"
+                                fill="hsl(var(--chart-2))"
                                 fillOpacity={0.1}
                                 strokeWidth={2}
                             />

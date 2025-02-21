@@ -1,19 +1,7 @@
 import { PanelCard } from "@/components/panel-card";
-import { differenceInDays } from "date-fns";
 import { useDashboardStore } from "@/store/dashboard";
-import { DashboardPanelProps, DateRange } from "./types";
-
-function formatDuration(seconds: number): string {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = Math.round(seconds % 60);
-    return `${minutes}m ${remainingSeconds}s`;
-}
-
-function formatTrendText(trend: number | undefined, dateRange: DateRange): string {
-    if (trend === undefined) return "Loading...";
-    const days = dateRange.from && dateRange.to ? differenceInDays(dateRange.to, dateRange.from) : 7;
-    return `${trend >= 0 ? '+' : ''}${trend.toFixed(1)}% in last ${days}d`;
-}
+import { DashboardPanelProps } from "./types";
+import { formatDuration, formatTrendText } from "@/utils/format";
 
 export function DashboardPanel({ loading = false, data }: DashboardPanelProps) {
     const { dateRange } = useDashboardStore();

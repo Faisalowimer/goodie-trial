@@ -83,6 +83,29 @@ export async function aggregateData(): Promise<AggregatedMetrics> {
         const totalConversions = sessions.reduce((sum, session) => sum + session.metrics.checkouts, 0);
         const avgEngagement = sessions.reduce((sum, session) => sum + session.metrics.engagementRate, 0) / sessions.length;
 
+        // Calculate trends by comparing with previous period
+        const midPoint = Math.floor(sessions.length / 2);
+        const currentPeriod = sessions.slice(midPoint);
+        const previousPeriod = sessions.slice(0, midPoint);
+
+        const calculateTrend = (current: number, previous: number): number => {
+            if (previous === 0) return 0;
+            return ((current - previous) / previous) * 100;
+        };
+
+        // Calculate metrics for both periods
+        const currentTraffic = currentPeriod.reduce((sum, session) => sum + session.metrics.totalUsers, 0);
+        const previousTraffic = previousPeriod.reduce((sum, session) => sum + session.metrics.totalUsers, 0);
+
+        const currentConversions = currentPeriod.reduce((sum, session) => sum + session.metrics.checkouts, 0);
+        const previousConversions = previousPeriod.reduce((sum, session) => sum + session.metrics.checkouts, 0);
+
+        const currentEngagement = currentPeriod.reduce((sum, session) => sum + session.metrics.engagementRate, 0) / currentPeriod.length;
+        const previousEngagement = previousPeriod.reduce((sum, session) => sum + session.metrics.engagementRate, 0) / previousPeriod.length;
+
+        const currentDuration = currentPeriod.reduce((sum, session) => sum + session.metrics.avgSessionDuration, 0) / currentPeriod.length;
+        const previousDuration = previousPeriod.reduce((sum, session) => sum + session.metrics.avgSessionDuration, 0) / previousPeriod.length;
+
         // Process search console data - specifically queries for keywords
         logger.debug('Processing search console data', {
             queryCount: searchConsole.performance.queries.length,
@@ -126,19 +149,22 @@ export async function aggregateData(): Promise<AggregatedMetrics> {
             overview: {
                 totalTraffic: {
                     value: totalTraffic,
-                    trend: '+20%' // TODO: Calculate from historical data
+                    trend: calculateTrend(currentTraffic, previousTraffic)
                 },
                 conversionRate: {
                     value: (totalConversions / totalTraffic) * 100,
-                    trend: '+0.5%'
+                    trend: calculateTrend(
+                        currentConversions / currentPeriod.length,
+                        previousConversions / previousPeriod.length
+                    )
                 },
                 engagementRate: {
                     value: avgEngagement,
-                    trend: '+2.3%'
+                    trend: calculateTrend(currentEngagement, previousEngagement)
                 },
                 avgSessionDuration: {
                     value: sessions.reduce((sum, session) => sum + session.metrics.avgSessionDuration, 0) / sessions.length,
-                    trend: '-15s'
+                    trend: calculateTrend(currentDuration, previousDuration)
                 }
             },
             trafficSources: Object.entries(
@@ -185,7 +211,7 @@ export async function aggregateData(): Promise<AggregatedMetrics> {
 
             // MOCK DATA: AI Platform metrics
             // TODO: Replace with actual data once we have AI platform tracking implemented
-            // This is temporary mock data to demonstrate the UI layout
+            // This is temporary mock data because we don't have AI platform tracking implemented yet due to lack of data
             aiPlatforms: [
                 { platform: 'ChatGPT', traffic: 450, engagement: 65, conversions: 23 },
                 { platform: 'Google SGE', traffic: 320, engagement: 58, conversions: 18 },
