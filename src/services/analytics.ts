@@ -1,13 +1,15 @@
 import { logger } from "@/utils/logger";
+import { DateRange } from "@/components/dashboard/types";
 import { AggregatedMetrics } from "@/types/analytics";
 import { SearchConsoleData } from "@/types/search-console";
 import { AnalyticsResponse } from "@/app/api/google/analytics-data/types";
+import { isWithinInterval, parseISO } from "date-fns";
 import fs from 'fs';
 import path from 'path';
 
-export async function aggregateData(): Promise<AggregatedMetrics> {
+export async function aggregateData(dateRange?: DateRange): Promise<AggregatedMetrics> {
     try {
-        logger.debug('Reading analytics and search console data from files');
+        logger.debug('Reading analytics and search console data from files', { dateRange });
 
         // Read analytics data from the latest file
         const analyticsDir = path.join(process.cwd(), 'src', 'data', 'google', 'analytics-data');
@@ -72,13 +74,56 @@ export async function aggregateData(): Promise<AggregatedMetrics> {
         const analytics: AnalyticsResponse = analyticsResponse.data;
         const searchConsole: SearchConsoleData = searchConsoleResponse.data;
 
-        logger.debug('Processing analytics data', {
-            sessionCount: Object.keys(analytics).length,
-            sampleSession: Object.values(analytics)[0]
+        // Filter sessions by date range if provided
+        const filterByDateRange = (date: string) => {
+            if (!dateRange?.from || !dateRange?.to) return true;
+            const sessionDate = parseISO(date);
+            return isWithinInterval(sessionDate, { start: dateRange.from, end: dateRange.to });
+        };
+
+        // Process analytics data with date filtering
+        const sessions = Object.values(analytics)
+            .filter(session => filterByDateRange(session.date));
+
+        logger.debug('Filtered sessions by date range', {
+            totalSessions: Object.values(analytics).length,
+            filteredSessions: sessions.length,
+            dateRange
         });
 
-        // Process analytics data
-        const sessions = Object.values(analytics);
+        // Process search console data with date filtering
+        const filteredSearchPerformance = searchConsole.performance.dates
+            .filter(date => filterByDateRange(date.date));
+
+        // Filter queries by date range
+        const filteredQueries = searchConsole.performance.queries
+            .filter(() => {
+                // If no date range is provided or if either date is null, include all queries
+                if (!dateRange?.from || !dateRange?.to || dateRange.from === null || dateRange.to === null) return true;
+
+                // Get the date range for the query from the filtered search performance
+                const queryDates = filteredSearchPerformance.map(date => parseISO(date.date));
+
+                // Include the query if any of its dates fall within the range
+                return queryDates.length > 0;
+            });
+
+        // Filter countries by date range
+        const filteredCountries = searchConsole.performance.countries
+            .filter(() => {
+                // If no date range is provided or if either date is null, include all countries
+                if (!dateRange?.from || !dateRange?.to || dateRange.from === null || dateRange.to === null) return true;
+
+                // Get the date range for the country from the filtered search performance
+                const countryDates = filteredSearchPerformance.map(date => parseISO(date.date));
+
+                // Include the country if any of its dates fall within the range
+                return countryDates.length > 0;
+            });
+
+        const brandKeywords = ['globalvets', 'global vets', 'vet'];
+
+        // Calculate metrics for current period
         const totalTraffic = sessions.reduce((sum, session) => sum + session.metrics.totalUsers, 0);
         const totalConversions = sessions.reduce((sum, session) => sum + session.metrics.checkouts, 0);
         const avgEngagement = sessions.reduce((sum, session) => sum + session.metrics.engagementRate, 0) / sessions.length;
@@ -106,45 +151,7 @@ export async function aggregateData(): Promise<AggregatedMetrics> {
         const currentDuration = currentPeriod.reduce((sum, session) => sum + session.metrics.avgSessionDuration, 0) / currentPeriod.length;
         const previousDuration = previousPeriod.reduce((sum, session) => sum + session.metrics.avgSessionDuration, 0) / previousPeriod.length;
 
-        // Process search console data - specifically queries for keywords
-        logger.debug('Processing search console data', {
-            queryCount: searchConsole.performance.queries.length,
-            sampleQuery: searchConsole.performance.queries[0]
-        });
-
-        const queries = searchConsole.performance.queries;
-        const brandKeywords = ['globalvets', 'global vets', 'vet']; // Example brand keywords
-
-        // Process search performance data
-        const searchPerformanceData = searchConsole.performance.dates.map(date => ({
-            date: date.date,
-            clicks: date.clicks,
-            impressions: date.impressions,
-            position: date.position
-        }));
-
-        // Process geographic data from search console
-        const geoDistribution = searchConsole.performance.countries.map(country => ({
-            country: country.country,
-            clicks: country.clicks,
-            impressions: country.impressions,
-            ctr: country.ctr,
-            position: country.position // Position indicates average ranking position (lower is better)
-        }));
-
-        // Add a comment explaining our data sources
-        logger.info('Data sources used:', {
-            analytics: {
-                source: 'Local JSON file (demo data)',
-                file: latestAnalyticsFile
-            },
-            searchConsole: {
-                source: 'Transformed CSV data',
-                file: '2025-02-21T15-03-22-906Z-transformed-data.json'
-            }
-        });
-
-        // Aggregate metrics
+        // Aggregate metrics with filtered data
         return {
             overview: {
                 totalTraffic: {
@@ -183,7 +190,7 @@ export async function aggregateData(): Promise<AggregatedMetrics> {
                 ...data
             })),
             keywords: {
-                branded: queries
+                branded: filteredQueries
                     .filter(q => brandKeywords.some(bk => q.query?.toLowerCase().includes(bk)))
                     .sort((a, b) => b.clicks - a.clicks)
                     .slice(0, 10)
@@ -194,7 +201,7 @@ export async function aggregateData(): Promise<AggregatedMetrics> {
                         ctr: q.ctr,
                         position: q.position
                     })),
-                nonBranded: queries
+                nonBranded: filteredQueries
                     .filter(q => !brandKeywords.some(bk => q.query?.toLowerCase().includes(bk)))
                     .sort((a, b) => b.clicks - a.clicks)
                     .slice(0, 10)
@@ -206,12 +213,19 @@ export async function aggregateData(): Promise<AggregatedMetrics> {
                         position: q.position
                     }))
             },
-            searchPerformance: searchPerformanceData,
-            geoDistribution,
-
-            // MOCK DATA: AI Platform metrics
-            // TODO: Replace with actual data once we have AI platform tracking implemented
-            // This is temporary mock data because we don't have AI platform tracking implemented yet due to lack of data
+            searchPerformance: filteredSearchPerformance.map(date => ({
+                date: date.date,
+                clicks: date.clicks,
+                impressions: date.impressions,
+                position: date.position
+            })),
+            geoDistribution: filteredCountries.map(country => ({
+                country: country.country,
+                clicks: country.clicks,
+                impressions: country.impressions,
+                ctr: country.ctr,
+                position: country.position
+            })),
             aiPlatforms: [
                 { platform: 'ChatGPT', traffic: 450, engagement: 65, conversions: 23 },
                 { platform: 'Google SGE', traffic: 320, engagement: 58, conversions: 18 },
@@ -224,7 +238,8 @@ export async function aggregateData(): Promise<AggregatedMetrics> {
             error: error instanceof Error ? error.message : String(error),
             stack: error instanceof Error ? error.stack : undefined,
             context: {
-                nodeEnv: process.env.NODE_ENV
+                nodeEnv: process.env.NODE_ENV,
+                dateRange
             }
         });
         throw error;

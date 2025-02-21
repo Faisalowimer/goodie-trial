@@ -3,10 +3,12 @@
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
 import { Moon, Sun } from "lucide-react"
+import { useSidebar } from "../sidebar"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
 export function ModeToggle() {
     const { setTheme } = useTheme()
+    const { isMobile } = useSidebar()
 
     return (
         <DropdownMenu>
@@ -17,7 +19,10 @@ export function ModeToggle() {
                     <span className="sr-only">Toggle theme</span>
                 </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
+            <DropdownMenuContent
+                align={isMobile ? "end" : "start"}
+                side={isMobile ? "top" : "bottom"}
+                sideOffset={4}>
                 <DropdownMenuItem onClick={() => setTheme("light")}>
                     Light
                 </DropdownMenuItem>

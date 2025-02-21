@@ -54,11 +54,12 @@ export const formatCurrencyWithDecimals = (amountInCents: number) => {
     }).format(amountInDollars)
 }
 
-export function formatTrendText(trend: number | undefined | string, dateRange: DateRange): string {
-    if (trend === undefined) return "Loading...";
-    const numericTrend = typeof trend === 'string' ? parseFloat(trend) : trend;
-    if (isNaN(numericTrend)) return "Loading...";
+export function formatTrendText(trend: number | undefined | string | null, dateRange: DateRange): string {
+    const days = dateRange?.from && dateRange?.to ? differenceInDays(dateRange.to, dateRange.from) : 7;
+    if (trend === undefined || trend === null) return `0% in the last ${days}d`;
 
-    const days = dateRange.from && dateRange.to ? differenceInDays(dateRange.to, dateRange.from) : 7;
-    return `${numericTrend >= 0 ? '+' : ''}${numericTrend.toFixed(1)}% in last ${days}d`;
+    const numericTrend = typeof trend === 'string' ? parseFloat(trend) : trend;
+    if (isNaN(numericTrend)) return `0% in the last ${days}d`;
+
+    return `${numericTrend > 0 ? '+' : ''}${numericTrend.toFixed(1)}% in last ${formatNumber(days)}d`;
 }

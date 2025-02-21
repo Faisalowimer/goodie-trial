@@ -25,9 +25,9 @@ export function PanelCard({ title, value, trend, format, formatFn, isLoading = f
                     </>
                 ) : (
                     <>
-                        <p className="text-base font-semibold leading-none mb-2">{title}</p>
+                        <p className="text-lg font-semibold leading-none mb-2">{title}</p>
                         <div className="text-4xl font-bold">{formattedValue}</div>
-                        <p className="text-xs text-muted-foreground">{trend}</p>
+                        <p className="text-base text-muted-foreground">{trend}</p>
                     </>
                 )}
             </CardContent>

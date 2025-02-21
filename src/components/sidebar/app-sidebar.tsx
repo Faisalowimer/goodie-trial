@@ -3,11 +3,10 @@
 import * as React from "react"
 import { NavUser } from "@/components/sidebar/nav-user"
 import { NavMain } from "@/components/sidebar/nav-main"
-import { NavReports } from "@/components/sidebar/nav-reports"
 import { CompanyInfo } from "./company-info"
-import { NavSecondary } from "@/components/sidebar/nav-secondary"
-import { Bot, LifeBuoy, Send, SquareTerminal, TrendingUp, ChartNoAxesCombined, TextSearch } from "lucide-react"
-import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar"
+import { SquareTerminal } from "lucide-react"
+import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip"
+import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar } from "@/components/ui/sidebar"
 import Image from "next/image"
 
 const data = {
@@ -28,45 +27,11 @@ const data = {
       icon: SquareTerminal,
       isActive: true,
     },
-    {
-      title: "Agent Analytics",
-      url: "#",
-      icon: Bot,
-    },
-    {
-      title: "Trends",
-      url: "#",
-      icon: ChartNoAxesCombined,
-    },
-  ],
-  navSecondary: [
-    {
-      title: "Support",
-      url: "#",
-      icon: LifeBuoy,
-    },
-    {
-      title: "Feedback",
-      url: "#",
-      icon: Send,
-    },
-  ],
-  reports: [
-    {
-      name: "Keywords",
-      url: "#",
-      icon: TextSearch,
-    },
-    {
-      name: "Engagement & Conversion",
-      url: "#",
-      icon: TrendingUp,
-    },
   ],
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
-
+  const { state } = useSidebar()
   const loggedCompany = "Global Vets"
   const loggedCompanyLogo = "/globalVets.png"
 
@@ -82,12 +47,32 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
               <a href="#">
-                <div className="flex size-12 items-center justify-center rounded-lg text-sidebar-primary-foreground">
-                  {loggedCompanyLogo && <Image src={loggedCompanyLogo} alt={loggedCompany} width={64} height={64} />}
-                </div>
-                <div className="grid flex-1 text-left text-sm">
-                  <span className="truncate font-semibold">{loggedCompany}</span>
-                </div>
+                {state === "collapsed" ? (
+                  <TooltipProvider delayDuration={0}>
+                    <Tooltip>
+                      <TooltipTrigger asChild onMouseEnter={() => { }} onMouseLeave={() => { }}>
+                        <div className="flex size-12 items-center justify-center rounded-lg text-sidebar-primary-foreground">
+                          {loggedCompanyLogo && <Image src={loggedCompanyLogo} alt={loggedCompany} width={64} height={64} />}
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent
+                        side="right"
+                        align="center"
+                      >
+                        {loggedCompany}
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                ) : (
+                  <>
+                    <div className="flex size-12 items-center justify-center rounded-lg text-sidebar-primary-foreground">
+                      {loggedCompanyLogo && <Image src={loggedCompanyLogo} alt={loggedCompany} width={64} height={64} />}
+                    </div>
+                    <div className="grid flex-1 text-left text-sm">
+                      <span className="truncate font-semibold">{loggedCompany}</span>
+                    </div>
+                  </>
+                )}
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
@@ -95,8 +80,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavReports reports={data.reports} />
-        <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />

@@ -11,28 +11,28 @@ export function DashboardPanel({ loading = false, data }: DashboardPanelProps) {
             <PanelCard
                 title="Total Sessions"
                 value={data?.totalTraffic.value ?? 0}
-                trend={formatTrendText(data?.totalTraffic.trend, dateRange)}
+                trend={loading ? "" : formatTrendText(data?.totalTraffic.trend, dateRange)}
                 format="number"
                 isLoading={loading}
             />
             <PanelCard
                 title="Conversion Rate"
                 value={data?.conversionRate.value ?? 0}
-                trend={formatTrendText(data?.conversionRate.trend, dateRange)}
+                trend={loading ? "" : formatTrendText(data?.conversionRate.trend, dateRange)}
                 format="percentage"
                 isLoading={loading}
             />
             <PanelCard
                 title="Engagement Rate"
                 value={data?.engagementRate.value ?? 0}
-                trend={formatTrendText(data?.engagementRate.trend, dateRange)}
+                trend={loading ? "" : formatTrendText(data?.engagementRate.trend, dateRange)}
                 format="percentage"
                 isLoading={loading}
             />
             <PanelCard
                 title="Avg. Session Duration"
                 value={data?.avgSessionDuration.value ?? 0}
-                trend={formatTrendText(data?.avgSessionDuration.trend, dateRange)}
+                trend={loading ? "" : formatTrendText(data?.avgSessionDuration.trend, dateRange)}
                 format="duration"
                 formatFn={formatDuration}
                 isLoading={loading}

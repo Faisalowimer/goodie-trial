@@ -10,6 +10,7 @@ export function NavReports({
     name: string
     url: string
     icon: LucideIcon
+    isActive?: boolean
   }[]
 }) {
 
