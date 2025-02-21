@@ -2,8 +2,7 @@ import { DashboardOverview, KeywordAnalytics, SearchPerformanceData, TrafficSour
 
 export interface DashboardLayoutProps {
     children: React.ReactNode;
-    fontClasses: string;
-    defaultOpen: boolean;
+    params?: Promise<any>;
 }
 
 export interface DateRange {
