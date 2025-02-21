@@ -51,9 +51,9 @@ export function KeywordTable({ data, loading = false }: KeywordTableProps) {
             <CardContent>
                 <Tabs defaultValue="branded" className="w-full">
                     <div className="flex items-center justify-between mb-4">
-                        <TabsList className="bg-background dark:bg-background">
-                            <TabsTrigger value="branded" className="data-[state=active]:bg-accent">Branded</TabsTrigger>
-                            <TabsTrigger value="nonBranded" className="data-[state=active]:bg-accent">Non-Branded</TabsTrigger>
+                        <TabsList className="dark:bg-background">
+                            <TabsTrigger value="branded" className="data-[state=active]:dark:bg-accent">Branded</TabsTrigger>
+                            <TabsTrigger value="nonBranded" className="data-[state=active]:dark:bg-accent">Non-Branded</TabsTrigger>
                         </TabsList>
                     </div>
                     <TabsContent value="branded" className="mt-0">

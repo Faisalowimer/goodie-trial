@@ -7,7 +7,7 @@ export function DashboardPanel({ loading = false, data }: DashboardPanelProps) {
     const { dateRange } = useDashboardStore();
 
     return (
-        <div className="grid grid-cols-4 gap-4 w-full pt-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 w-full pt-1">
             <PanelCard
                 title="Total Sessions"
                 value={data?.totalTraffic.value ?? 0}
