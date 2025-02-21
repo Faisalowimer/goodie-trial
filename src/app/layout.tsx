@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Goodie Project",
-  description: "Goodie Project for AI visibility and search",
+  title: "Goodie AI",
+  description: "Goodie Project trial for Faisal Owimer",
   icons: {
     icon: [
       { url: '/favicon.ico' },
