@@ -3,8 +3,6 @@ import { NextResponse } from 'next/server';
 import { fetchBingData } from '../utils';
 import { SuccessResult } from '../types';
 
-
-
 export async function GET() {
     try {
         logger.info('Testing Bing Webmaster API connection');

@@ -6,12 +6,14 @@ import path from 'path';
  * Configuration for data saving
  */
 interface SaveConfig {
-    /** Base directory for saving data (e.g., 'google/search-console') */
+    /** Base directory for saving data (e.g., 'google/search-console', 'transformed/search-console') */
     baseDir: string;
     /** Optional prefix for the filename */
     filePrefix?: string;
     /** Optional custom metadata to include in the saved file */
     customMetadata?: Record<string, unknown>;
+    /** Whether this is transformed data */
+    isTransformed?: boolean;
 }
 
 /**
@@ -26,6 +28,10 @@ interface DataMetadata {
     dataSize: number;
     /** Source of the data (e.g., 'bing', 'google') */
     source: string;
+    /** Whether this is transformed data */
+    isTransformed: boolean;
+    /** Original data sources if transformed */
+    originalSources?: string[];
     /** Custom metadata fields */
     [key: string]: unknown;
 }
@@ -50,7 +56,13 @@ export async function saveToJsonFile<T>(
 ): Promise<string> {
     try {
         // Create the full directory path
-        const baseDir = path.join(process.cwd(), 'src', 'data', config.baseDir);
+        const baseDir = path.join(
+            process.cwd(),
+            'src',
+            'data',
+            config.isTransformed ? 'transformed' : '',
+            config.baseDir
+        );
 
         // Ensure directory exists
         if (!fs.existsSync(baseDir)) {
@@ -76,7 +88,8 @@ export async function saveToJsonFile<T>(
             timestamp: new Date().toISOString(),
             rowCount,
             dataSize,
-            source: config.baseDir.split('/')[0], // First part of baseDir (e.g., 'bing' from 'bing/search-console')
+            source: config.baseDir.split('/')[0],
+            isTransformed: config.isTransformed || false,
             ...config.customMetadata
         };
 
@@ -95,7 +108,8 @@ export async function saveToJsonFile<T>(
             stats: {
                 rowCount,
                 fileSize: fs.statSync(filePath).size,
-                source: metadata.source
+                source: metadata.source,
+                isTransformed: metadata.isTransformed
             }
         });
 
