@@ -1,20 +1,37 @@
+import { DashboardOverview, KeywordAnalytics, SearchPerformanceData, TrafficSource, GeoData } from "@/types/analytics";
+
 export interface DashboardLayoutProps {
     children: React.ReactNode;
     fontClasses: string;
     defaultOpen: boolean;
 }
 
-export type DateRange = {
-    from: Date | null | undefined
-    to: Date | null | undefined
+export interface DateRange {
+    from: Date | null;
+    to: Date | null;
 }
 
 export interface DashboardPanelProps {
     loading?: boolean;
-    data?: {
-        totalTraffic: { value: number; trend: string };
-        conversionRate: { value: number; trend: string };
-        engagementRate: { value: number; trend: string };
-        avgSessionDuration: { value: number; trend: string };
-    };
+    data?: DashboardOverview;
+}
+
+export interface SearchPerformanceChartProps {
+    loading?: boolean;
+    data?: SearchPerformanceData[];
+}
+
+export interface TrafficSourcesChartProps {
+    loading?: boolean;
+    data?: TrafficSource[];
+}
+
+export interface KeywordTableProps {
+    loading?: boolean;
+    data?: KeywordAnalytics;
+}
+
+export interface GeoDistributionProps {
+    loading?: boolean;
+    data: GeoData[];
 }

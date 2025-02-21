@@ -4,25 +4,32 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Calendar } from "@/components/ui/calendar"
-import { DateRange } from "react-day-picker"
 import { CalendarIcon } from "lucide-react"
 import { addDays, format } from "date-fns"
+import { useDashboardStore } from "@/store/dashboard"
+import { DateRange as DayPickerRange } from "react-day-picker"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 export function DatePickerWithRange({
     className,
 }: React.HTMLAttributes<HTMLDivElement>) {
-    // Default to the last 7 days
-    const today = new Date()
-    const [date, setDate] = React.useState<DateRange | undefined>({
-        from: addDays(today, -7),
-        to: today,
-    })
+    const { dateRange, setDateRange } = useDashboardStore();
+    const [selected, setSelected] = React.useState<DayPickerRange | undefined>({
+        from: dateRange.from || undefined,
+        to: dateRange.to || undefined,
+    });
+
+    const handleSelect = (range: DayPickerRange | undefined) => {
+        setSelected(range);
+        if (range) {
+            setDateRange({ from: range.from || null, to: range.to || null });
+        }
+    };
 
     const handlePresetChange = (value: string) => {
         const today = new Date()
-        let newRange: DateRange
+        let newRange: DayPickerRange;
         if (value === "today") {
             newRange = { from: today, to: today }
         } else if (value === "last7") {
@@ -32,10 +39,10 @@ export function DatePickerWithRange({
         } else if (value === "ytd") {
             newRange = { from: new Date(today.getFullYear(), 0, 1), to: today }
         } else {
-            // If no preset is selected, keep the existing range
-            newRange = date || { from: today, to: today }
+            newRange = { from: dateRange.from || undefined, to: dateRange.to || undefined }
         }
-        setDate(newRange)
+        setSelected(newRange);
+        setDateRange({ from: newRange.from || null, to: newRange.to || null });
     }
 
     return (
@@ -47,18 +54,18 @@ export function DatePickerWithRange({
                         variant={"outline"}
                         className={cn(
                             "w-[250px] justify-start text-left font-normal",
-                            !date && "text-muted-foreground"
+                            !dateRange && "text-muted-foreground"
                         )}
                     >
                         <CalendarIcon className="mr-1" />
-                        {date?.from ? (
-                            date.to ? (
+                        {dateRange?.from ? (
+                            dateRange.to ? (
                                 <>
-                                    {format(date.from, "LLL dd, y")} -{" "}
-                                    {format(date.to, "LLL dd, y")}
+                                    {format(dateRange.from, "LLL dd, y")} -{" "}
+                                    {format(dateRange.to, "LLL dd, y")}
                                 </>
                             ) : (
-                                format(date.from, "LLL dd, y")
+                                format(dateRange.from, "LLL dd, y")
                             )
                         ) : (
                             <span>Pick a date</span>
@@ -82,9 +89,9 @@ export function DatePickerWithRange({
                     <Calendar
                         initialFocus
                         mode="range"
-                        defaultMonth={date?.from}
-                        selected={date}
-                        onSelect={setDate}
+                        defaultMonth={selected?.from}
+                        selected={selected}
+                        onSelect={handleSelect}
                         numberOfMonths={2}
                     />
                 </PopoverContent>

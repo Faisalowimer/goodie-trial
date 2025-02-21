@@ -1,41 +1,62 @@
+export interface MetricWithTrend {
+    value: number;
+    trend: number;
+}
+
+export interface DashboardOverview {
+    totalTraffic: MetricWithTrend;
+    conversionRate: MetricWithTrend;
+    engagementRate: MetricWithTrend;
+    avgSessionDuration: MetricWithTrend;
+}
+
+export interface TrafficSource {
+    source: string;
+    sessions: number;
+    conversions: number;
+    engagement: number;
+}
+
+export interface KeywordData {
+    keyword: string;
+    clicks: number;
+    impressions: number;
+    ctr: number;
+    position: number;
+}
+
+export interface KeywordAnalytics {
+    branded: KeywordData[];
+    nonBranded: KeywordData[];
+}
+
+export interface SearchPerformanceData {
+    date: string;
+    clicks: number;
+    impressions: number;
+    position: number;
+}
+
+export interface GeoData {
+    country: string;
+    clicks: number;
+    impressions: number;
+    ctr: number;
+    position: number;
+}
+
+export interface AiPlatformData {
+    platform: string;
+    traffic: number;
+    engagement: number;
+    conversions: number;
+}
+
 export interface AggregatedMetrics {
-    overview: {
-        totalTraffic: { value: number; trend: string };
-        conversionRate: { value: number; trend: string };
-        engagementRate: { value: number; trend: string };
-        avgSessionDuration: { value: number; trend: string };
-    };
-    trafficSources: {
-        source: string;
-        sessions: number;
-        conversions: number;
-        engagement: number;
-    }[];
-    keywords: {
-        branded: {
-            keyword: string;
-            clicks: number;
-            impressions: number;
-            ctr: number;
-            position: number;
-        }[];
-        nonBranded: {
-            keyword: string;
-            clicks: number;
-            impressions: number;
-            ctr: number;
-            position: number;
-        }[];
-    };
-    aiPlatforms: {
-        platform: string;
-        traffic: number;
-        engagement: number;
-        conversions: number;
-    }[];
-    geographicData: {
-        country: string;
-        traffic: number;
-        engagement: number;
-    }[];
+    overview: DashboardOverview;
+    trafficSources: TrafficSource[];
+    keywords: KeywordAnalytics;
+    searchPerformance: SearchPerformanceData[];
+    geoDistribution: GeoData[];
+    aiPlatforms: AiPlatformData[];
 }
