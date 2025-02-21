@@ -1,3 +1,6 @@
+import { DateRange } from "@/components/dashboard/types";
+import { differenceInDays } from "date-fns";
+
 type FormatterType = 'number' | 'percentage' | 'duration' | 'currency';
 
 export const formatter = (type: FormatterType) => {
@@ -34,19 +37,11 @@ export const formatNumber = (value: number) => {
 };
 
 // Formats duration (in seconds) to a human readable format, e.g. "10s" or "10m 45s" or "10h 30m 10s"
-export const formatDuration = (value: number) => {
-    const hours = Math.floor(value / 3600);
-    const minutes = Math.floor((value % 3600) / 60);
-    const seconds = value % 60;
-
-    if (hours > 0) {
-        return `${hours}h ${minutes}m ${seconds}s`;
-    }
-    if (minutes > 0) {
-        return `${minutes}m ${seconds}s`;
-    }
-    return `${seconds}s`;
-};
+export function formatDuration(seconds: number): string {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = Math.round(seconds % 60);
+    return `${minutes}m ${remainingSeconds}s`;
+}
 
 // Formatted currency string for a given amount ex: $525.25
 export const formatCurrencyWithDecimals = (amountInCents: number) => {
@@ -57,4 +52,13 @@ export const formatCurrencyWithDecimals = (amountInCents: number) => {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2
     }).format(amountInDollars)
+}
+
+export function formatTrendText(trend: number | undefined | string, dateRange: DateRange): string {
+    if (trend === undefined) return "Loading...";
+    const numericTrend = typeof trend === 'string' ? parseFloat(trend) : trend;
+    if (isNaN(numericTrend)) return "Loading...";
+
+    const days = dateRange.from && dateRange.to ? differenceInDays(dateRange.to, dateRange.from) : 7;
+    return `${numericTrend >= 0 ? '+' : ''}${numericTrend.toFixed(1)}% in last ${days}d`;
 }

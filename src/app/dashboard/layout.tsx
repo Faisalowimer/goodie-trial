@@ -5,7 +5,7 @@ import { AppSidebar } from "@/components/sidebar/app-sidebar";
 import { DashboardTabs } from "@/components/dashboard/dashboard-tabs";
 import { DashboardLayoutProps } from "@/components/dashboard/types";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 
 export const metadata: Metadata = {
     title: "Dashboard | Goodie AI",
@@ -29,9 +29,6 @@ export default function DashboardLayout({ children, defaultOpen, fontClasses }: 
                                         </BreadcrumbLink>
                                     </BreadcrumbItem>
                                     <BreadcrumbSeparator className="hidden md:block" />
-                                    <BreadcrumbItem>
-                                        <BreadcrumbPage>Data Fetching</BreadcrumbPage>
-                                    </BreadcrumbItem>
                                 </BreadcrumbList>
                             </Breadcrumb>
                         </div>

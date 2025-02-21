@@ -10,7 +10,7 @@ export function GeoDistribution({ data, loading = false }: GeoDistributionProps)
                 <CardHeader>
                     <CardTitle>Geographic Distribution</CardTitle>
                 </CardHeader>
-                <CardContent className="flex items-center justify-center py-4">
+                <CardContent className="h-[400px] flex items-center justify-center py-4">
                     <p className="text-muted-foreground">Loading geographic data...</p>
                 </CardContent>
             </Card>
@@ -29,7 +29,7 @@ export function GeoDistribution({ data, loading = false }: GeoDistributionProps)
                 <div className="h-[400px] overflow-auto relative">
                     <Table>
                         <TableHeader className="sticky top-0 bg-background dark:bg-accent z-10">
-                            <TableRow>
+                            <TableRow className="border-b dark:border-black">
                                 <TableHead>Country</TableHead>
                                 <TableHead className="text-right">Clicks</TableHead>
                                 <TableHead className="text-right">Impressions</TableHead>
@@ -39,7 +39,7 @@ export function GeoDistribution({ data, loading = false }: GeoDistributionProps)
                         </TableHeader>
                         <TableBody>
                             {data.map((item, index) => (
-                                <TableRow key={index}>
+                                <TableRow key={index} className="border-b dark:border-black">
                                     <TableCell className="font-medium">{item.country}</TableCell>
                                     <TableCell className="text-right">{formatter('number')(item.clicks)}</TableCell>
                                     <TableCell className="text-right">{formatter('number')(item.impressions)}</TableCell>
