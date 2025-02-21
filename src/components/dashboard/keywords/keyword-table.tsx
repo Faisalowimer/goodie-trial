@@ -23,8 +23,17 @@ export function KeywordTable({ data, loading = false }: KeywordTableProps) {
         );
     }
 
-    if (!data) {
-        return null;
+    if (!data || (!data.branded.length && !data.nonBranded.length)) {
+        return (
+            <Card className="dark:bg-accent">
+                <CardHeader>
+                    <CardTitle>Keyword Performance</CardTitle>
+                </CardHeader>
+                <CardContent className="h-[400px] flex items-center justify-center py-4">
+                    <p className="text-muted-foreground">No keyword data available</p>
+                </CardContent>
+            </Card>
+        );
     }
 
     return (

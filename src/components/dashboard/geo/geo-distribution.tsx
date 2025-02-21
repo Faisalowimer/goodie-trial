@@ -17,6 +17,19 @@ export function GeoDistribution({ data, loading = false }: GeoDistributionProps)
         );
     }
 
+    if (!data || data.length === 0) {
+        return (
+            <Card className="dark:bg-accent">
+                <CardHeader>
+                    <CardTitle>Geographic Distribution</CardTitle>
+                </CardHeader>
+                <CardContent className="h-[400px] flex items-center justify-center py-4">
+                    <p className="text-muted-foreground">No geographic data available</p>
+                </CardContent>
+            </Card>
+        );
+    }
+
     return (
         <Card className="dark:bg-accent">
             <CardHeader>
@@ -26,7 +39,7 @@ export function GeoDistribution({ data, loading = false }: GeoDistributionProps)
                 </p>
             </CardHeader>
             <CardContent>
-                <div className="h-[400px] overflow-auto relative">
+                <div className="h-[400px] overflow-auto relative mt-12">
                     <Table>
                         <TableHeader className="sticky top-0 bg-background dark:bg-accent z-10">
                             <TableRow className="border-b dark:border-black">

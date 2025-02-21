@@ -9,7 +9,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis, Tooltip, Legend } from "recharts"
 
 export function SearchPerformanceChart({ data, loading = false }: SearchPerformanceChartProps) {
-    if (loading || !data) {
+    if (loading || !data || data.length === 0) {
         return (
             <Card className="dark:bg-accent">
                 <CardHeader>
@@ -17,7 +17,7 @@ export function SearchPerformanceChart({ data, loading = false }: SearchPerforma
                     <CardDescription>Clicks and impressions over time</CardDescription>
                 </CardHeader>
                 <CardContent className="h-[300px] flex items-center justify-center">
-                    <p className="text-muted-foreground">Loading search data...</p>
+                    <p className="text-muted-foreground">No search data available</p>
                 </CardContent>
             </Card>
         );

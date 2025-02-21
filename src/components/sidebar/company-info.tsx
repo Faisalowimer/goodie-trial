@@ -45,7 +45,6 @@ export function CompanyInfo({ company }: CompanyInfoProps) {
                                     <TooltipContent
                                         side="right"
                                         align="center"
-                                    //sideOffset={18}
                                     >
                                         {company.name}
                                     </TooltipContent>

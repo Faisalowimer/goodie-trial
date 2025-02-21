@@ -10,6 +10,7 @@ export function NavSecondary({
     title: string
     url: string
     icon: LucideIcon
+    isActive?: boolean
   }[]
 } & React.ComponentPropsWithoutRef<typeof SidebarGroup>) {
   return (

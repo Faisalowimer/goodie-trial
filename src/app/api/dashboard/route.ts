@@ -2,9 +2,20 @@ import { logger } from '@/utils/logger';
 import { NextResponse } from 'next/server';
 import { aggregateData } from '@/services/analytics';
 
-export async function GET() {
+export async function GET(request: Request) {
     try {
-        const data = await aggregateData();
+        const url = new URL(request.url);
+        const from = url.searchParams.get('from');
+        const to = url.searchParams.get('to');
+
+        const dateRange = from && to ? {
+            from: new Date(from),
+            to: new Date(to)
+        } : undefined;
+
+        logger.debug('Fetching dashboard data with date range', { dateRange });
+
+        const data = await aggregateData(dateRange);
 
         return NextResponse.json({
             success: true,

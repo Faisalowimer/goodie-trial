@@ -1,5 +1,5 @@
+import { sub } from 'date-fns';
 import { create } from 'zustand';
-import { addDays } from 'date-fns';
 import { DateRange } from '@/components/dashboard/types';
 import { AggregatedMetrics } from '@/types/analytics';
 
@@ -17,7 +17,7 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     data: null,
     loading: true,
     dateRange: {
-        from: addDays(new Date(), -7),
+        from: sub(new Date(), { days: 90 }),
         to: new Date(),
     },
     setData: (data) => set({ data }),

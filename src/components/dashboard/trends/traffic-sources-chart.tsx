@@ -8,7 +8,7 @@ import { Bar, BarChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis, Toolti
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 export function TrafficSourcesChart({ data, loading = false }: TrafficSourcesChartProps) {
-    if (loading || !data) {
+    if (loading || !data || data.length === 0) {
         return (
             <Card className="dark:bg-accent">
                 <CardHeader>
@@ -16,7 +16,7 @@ export function TrafficSourcesChart({ data, loading = false }: TrafficSourcesCha
                     <CardDescription>Sessions by source</CardDescription>
                 </CardHeader>
                 <CardContent className="h-[300px] flex items-center justify-center">
-                    <p className="text-muted-foreground">Loading traffic data...</p>
+                    <p className="text-muted-foreground">No traffic data available</p>
                 </CardContent>
             </Card>
         );
@@ -24,7 +24,12 @@ export function TrafficSourcesChart({ data, loading = false }: TrafficSourcesCha
 
     // Calculate total sessions and engagement metrics
     const totalSessions = data.reduce((sum, item) => sum + item.sessions, 0);
-    const topSource = data.reduce((prev, curr) => prev.sessions > curr.sessions ? prev : curr);
+    let topSource = data[0];
+    for (const source of data) {
+        if (source.sessions > topSource.sessions) {
+            topSource = source;
+        }
+    }
     const topSourcePercentage = (topSource.sessions / totalSessions) * 100;
 
     return (
@@ -81,7 +86,7 @@ export function TrafficSourcesChart({ data, loading = false }: TrafficSourcesCha
                             />
                             <Bar
                                 dataKey="sessions"
-                                fill="hsl(var(--primary))"
+                                fill="hsl(var(--chart-2))"
                                 radius={[4, 4, 0, 0]}
                             />
                         </BarChart>
