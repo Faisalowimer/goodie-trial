@@ -1,9 +1,10 @@
 {
   "metadata": {
-    "timestamp": "2025-02-21T00:05:26.646Z",
+    "timestamp": "2025-02-21T15:12:48.693Z",
     "rowCount": 1,
     "dataSize": 331620,
     "source": "google",
+    "isTransformed": false,
     "dataType": "analytics-data",
     "metrics": [
       "totalUsers",

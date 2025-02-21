@@ -1,44 +1,35 @@
-import { Skeleton } from "@/components/ui/skeleton";
-import { formatter } from "@/utils/format";
 import { Card, CardContent } from "@/components/ui/card";
+import { formatter } from "@/utils/format";
+import { Skeleton } from "@/components/ui/skeleton";
 
-interface PanelCardProps {
+export interface PanelCardProps {
     title: string;
     value: number;
-    statsMsg: string;
-    format?: "number" | "percentage" | "duration" | undefined;
+    trend: string;
+    format: "number" | "percentage" | "duration";
+    formatFn?: (value: number) => string;
     isLoading?: boolean;
 }
 
-export function PanelCard({
-    title,
-    value,
-    statsMsg,
-    format,
-    isLoading = false
-}: PanelCardProps) {
+export function PanelCard({ title, value, trend, format, formatFn, isLoading = false }: PanelCardProps) {
+    const formattedValue = formatFn ? formatFn(value) : formatter(format)(value);
+
     return (
-        <Card className="bg-accent w-full">
-            <CardContent className="flex flex-col justify-between p-6">
-                <div className="space-y-2">
-                    <p className="text-base font-semibold text-muted-foreground">
-                        {title}
-                    </p>
-                    <div className="mt-2 space-y-1">
-                        {isLoading ? (
-                            <Skeleton className="h-9 w-[120px]" />
-                        ) : (
-                            <div className="space-y-1">
-                                <p className="text-4xl font-bold tracking-tight text-foreground">
-                                    {formatter(format)(value)}
-                                </p>
-                                <p className="text-sm text-muted-foreground">
-                                    {statsMsg}
-                                </p>
-                            </div>
-                        )}
-                    </div>
-                </div>
+        <Card className="dark:bg-accent">
+            <CardContent className="pt-6">
+                {isLoading ? (
+                    <>
+                        <Skeleton className="h-8 w-24 mb-2" />
+                        <Skeleton className="h-4 w-32 mb-3" />
+                        <Skeleton className="h-5 w-28" />
+                    </>
+                ) : (
+                    <>
+                        <div className="text-4xl font-bold">{formattedValue}</div>
+                        <p className="text-xs text-muted-foreground">{trend}</p>
+                        <p className="text-sm font-medium leading-none mt-3">{title}</p>
+                    </>
+                )}
             </CardContent>
         </Card>
     );

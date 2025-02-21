@@ -1,11 +1,18 @@
-export const formatter = (
-    format: "number" | "percentage" | "duration" | undefined
-): ((value: number) => string) => {
-    if (format === "number") return formatNumber;
-    if (format === "percentage") return formatPercentage;
-    if (format === "duration") return formatDuration;
-    // Fallback: simply convert the number to a string.
-    return (value: number) => value.toString();
+type FormatterType = 'number' | 'percentage' | 'duration' | 'currency';
+
+export const formatter = (type: FormatterType) => {
+    switch (type) {
+        case 'number':
+            return formatNumber;
+        case 'percentage':
+            return formatPercentage;
+        case 'duration':
+            return formatDuration;
+        case 'currency':
+            return formatCurrencyWithDecimals;
+        default:
+            return (value: number) => value.toString();
+    }
 };
 
 // Formats percentage with comma separators for large values, e.g. "50%" or "10,000%"
@@ -40,3 +47,14 @@ export const formatDuration = (value: number) => {
     }
     return `${seconds}s`;
 };
+
+// Formatted currency string for a given amount ex: $525.25
+export const formatCurrencyWithDecimals = (amountInCents: number) => {
+    const amountInDollars = amountInCents / 100;
+    return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    }).format(amountInDollars)
+}
