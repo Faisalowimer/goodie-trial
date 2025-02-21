@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     title: "Dashboard | Goodie AI",
 };
 
-export default function DashboardLayout({ children, defaultOpen, fontClasses }: DashboardLayoutProps) {
+export default function DashboardLayout({ children }: DashboardLayoutProps) {
     return (
-        <div className={fontClasses}>
-            <SidebarProvider defaultOpen={defaultOpen} className="py-4">
+        <div className="font-sans">
+            <SidebarProvider defaultOpen={true} className="py-4">
                 <AppSidebar />
                 <SidebarInset>
                     <header className="flex h-16 shrink-0 items-center gap-2">
