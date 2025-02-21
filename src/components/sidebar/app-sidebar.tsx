@@ -9,6 +9,7 @@ import { NavSecondary } from "@/components/sidebar/nav-secondary"
 import { Bot, LifeBuoy, Send, SquareTerminal, TrendingUp, ChartNoAxesCombined, TextSearch } from "lucide-react"
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar"
 import Image from "next/image"
+
 const data = {
   company: {
     name: "Goodie AI",
@@ -18,7 +19,7 @@ const data = {
     firstName: "Faisal",
     lastName: "Owimer",
     email: "faisal@globalvets.co",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "",
   },
   navMain: [
     {
@@ -74,17 +75,17 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <CompanyInfo company={{
           name: data.company.name,
-          //logo: data.company.logo,
+          logo: data.company.logo,
         }}
         />
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
               <a href="#">
-                <div className="flex aspect-square size-8 items-center justify-center rounded-lg  text-sidebar-primary-foreground">
-                  {loggedCompanyLogo && <Image src={loggedCompanyLogo} alt={loggedCompany} width={32} height={32} />}
+                <div className="flex size-12 items-center justify-center rounded-lg text-sidebar-primary-foreground">
+                  {loggedCompanyLogo && <Image src={loggedCompanyLogo} alt={loggedCompany} width={64} height={64} />}
                 </div>
-                <div className="grid flex-1 text-left text-sm leading-tight">
+                <div className="grid flex-1 text-left text-sm">
                   <span className="truncate font-semibold">{loggedCompany}</span>
                 </div>
               </a>

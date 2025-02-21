@@ -46,11 +46,11 @@ export function DatePickerWithRange({
                         id="date"
                         variant={"outline"}
                         className={cn(
-                            "w-[300px] justify-start text-left font-normal",
+                            "w-[250px] justify-start text-left font-normal",
                             !date && "text-muted-foreground"
                         )}
                     >
-                        <CalendarIcon className="mr-2" />
+                        <CalendarIcon className="mr-1" />
                         {date?.from ? (
                             date.to ? (
                                 <>
@@ -65,7 +65,7 @@ export function DatePickerWithRange({
                         )}
                     </Button>
                 </PopoverTrigger>
-                <PopoverContent className="w-auto mr-6" align="start">
+                <PopoverContent className="w-auto mr-6 mt-2" align="start">
                     {/* Preset Select */}
                     <Select onValueChange={handlePresetChange}>
                         <SelectTrigger className="mb-4">

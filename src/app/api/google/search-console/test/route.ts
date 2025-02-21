@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server';
 import { logger } from '@/utils/logger';
+import { NextResponse } from 'next/server';
 import { initializeSearchConsoleClient } from '../utils';
 
 // This route is used to test the authentication of the Search Console API

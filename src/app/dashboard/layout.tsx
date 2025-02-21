@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function DashboardLayout({ children, defaultOpen, fontClasses }: DashboardLayoutProps) {
     return (
         <div className={fontClasses}>
-            <SidebarProvider defaultOpen={defaultOpen}>
+            <SidebarProvider defaultOpen={defaultOpen} className="py-4">
                 <AppSidebar />
                 <SidebarInset>
                     <header className="flex h-16 shrink-0 items-center gap-2">
@@ -37,7 +37,9 @@ export default function DashboardLayout({ children, defaultOpen, fontClasses }: 
                         </div>
                     </header>
                     <DashboardTabs />
-                    {children}
+                    <div className="px-4 pb-4">
+                        {children}
+                    </div>
                 </SidebarInset>
             </SidebarProvider>
         </div>

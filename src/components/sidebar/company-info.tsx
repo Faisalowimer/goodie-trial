@@ -4,11 +4,12 @@ import { cn } from "@/lib/utils"
 import { ModeToggle } from "@/components/ui/theme/mode-toggle"
 import { SidebarMenu, SidebarMenuItem, useSidebar } from "@/components/ui/sidebar"
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip"
+import Image from "next/image"
 
 interface CompanyInfoProps {
     company: {
         name: string
-        logo?: React.ElementType
+        logo?: string | React.ElementType
     }
 }
 
@@ -16,8 +17,12 @@ export function CompanyInfo({ company }: CompanyInfoProps) {
     const { state } = useSidebar()
 
     const logo = (
-        <div className="flex aspect-square size-9 items-center justify-center rounded-lg text-sidebar-primary-foreground">
-            {company.logo && <company.logo />}
+        <div className="flex size-18 items-center justify-center rounded-lg text-sidebar-primary-foreground">
+            {company.logo && typeof company.logo === 'string' ? (
+                <Image src={company.logo} alt={company.name} width={128} height={128} />
+            ) : company.logo ? (
+                <company.logo />
+            ) : null}
         </div>
     )
 
@@ -53,9 +58,6 @@ export function CompanyInfo({ company }: CompanyInfoProps) {
                         <>
                             {logo}
                             <div className="grid flex-1 text-left text-sm leading-tight ml-1">
-                                <span className="truncate font-semibold">
-                                    {company.name}
-                                </span>
                             </div>
                             <ModeToggle />
                         </>

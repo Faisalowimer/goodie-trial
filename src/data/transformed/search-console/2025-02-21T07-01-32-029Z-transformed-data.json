@@ -1,0 +1,4806 @@
+{
+  "metadata": {
+    "timestamp": "2025-02-21T07:01:32.030Z",
+    "rowCount": 1,
+    "dataSize": 52692,
+    "source": "search-console",
+    "isTransformed": true,
+    "originalSources": [
+      "csv-crawler",
+      "csv-overall"
+    ],
+    "transformationDate": "2025-02-21T07:01:32.029Z"
+  },
+  "data": {
+    "crawler": {
+      "stats": [
+        {
+          "date": "2024-11-22",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-11-23",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-11-24",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-11-25",
+          "totalRequests": 108,
+          "downloadSize": 658229,
+          "responseTime": 56
+        },
+        {
+          "date": "2024-11-26",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-11-27",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-11-28",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-11-29",
+          "totalRequests": 56,
+          "downloadSize": 317014,
+          "responseTime": 51
+        },
+        {
+          "date": "2024-11-30",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-01",
+          "totalRequests": 3,
+          "downloadSize": 39845,
+          "responseTime": 73
+        },
+        {
+          "date": "2024-12-02",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-03",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-04",
+          "totalRequests": 115,
+          "downloadSize": 644483,
+          "responseTime": 37
+        },
+        {
+          "date": "2024-12-05",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-06",
+          "totalRequests": 57,
+          "downloadSize": 321652,
+          "responseTime": 122
+        },
+        {
+          "date": "2024-12-07",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-08",
+          "totalRequests": 60,
+          "downloadSize": 397908,
+          "responseTime": 68
+        },
+        {
+          "date": "2024-12-09",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-10",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-11",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-12",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-13",
+          "totalRequests": 47,
+          "downloadSize": 269631,
+          "responseTime": 71
+        },
+        {
+          "date": "2024-12-14",
+          "totalRequests": 48,
+          "downloadSize": 261691,
+          "responseTime": 27
+        },
+        {
+          "date": "2024-12-15",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-16",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-17",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-18",
+          "totalRequests": 121,
+          "downloadSize": 747728,
+          "responseTime": 62
+        },
+        {
+          "date": "2024-12-19",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-20",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-21",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-22",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-23",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-24",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-25",
+          "totalRequests": 48,
+          "downloadSize": 267337,
+          "responseTime": 42
+        },
+        {
+          "date": "2024-12-26",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-27",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-28",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-29",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2024-12-30",
+          "totalRequests": 102,
+          "downloadSize": 610969,
+          "responseTime": 32
+        },
+        {
+          "date": "2024-12-31",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-01",
+          "totalRequests": 29,
+          "downloadSize": 143677,
+          "responseTime": 32
+        },
+        {
+          "date": "2025-01-02",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-03",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-04",
+          "totalRequests": 9,
+          "downloadSize": 79114,
+          "responseTime": 375
+        },
+        {
+          "date": "2025-01-05",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-06",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-07",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-08",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-09",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-10",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-11",
+          "totalRequests": 40,
+          "downloadSize": 249617,
+          "responseTime": 63
+        },
+        {
+          "date": "2025-01-12",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-13",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-14",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-15",
+          "totalRequests": 31,
+          "downloadSize": 152305,
+          "responseTime": 90
+        },
+        {
+          "date": "2025-01-16",
+          "totalRequests": 78,
+          "downloadSize": 562412,
+          "responseTime": 155
+        },
+        {
+          "date": "2025-01-17",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-18",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-19",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-20",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-21",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-22",
+          "totalRequests": 37,
+          "downloadSize": 154962,
+          "responseTime": 184
+        },
+        {
+          "date": "2025-01-23",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-24",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-25",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-26",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-01-27",
+          "totalRequests": 58,
+          "downloadSize": 293544,
+          "responseTime": 81
+        },
+        {
+          "date": "2025-01-28",
+          "totalRequests": 116,
+          "downloadSize": 673339,
+          "responseTime": 194
+        },
+        {
+          "date": "2025-01-29",
+          "totalRequests": 80,
+          "downloadSize": 1330444,
+          "responseTime": 65
+        },
+        {
+          "date": "2025-01-30",
+          "totalRequests": 46,
+          "downloadSize": 211276,
+          "responseTime": 100
+        },
+        {
+          "date": "2025-01-31",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-02-01",
+          "totalRequests": 3,
+          "downloadSize": 685141,
+          "responseTime": 81
+        },
+        {
+          "date": "2025-02-02",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-02-03",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-02-04",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-02-05",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-02-06",
+          "totalRequests": 51,
+          "downloadSize": 288505,
+          "responseTime": 54
+        },
+        {
+          "date": "2025-02-07",
+          "totalRequests": 61,
+          "downloadSize": 412232,
+          "responseTime": 39
+        },
+        {
+          "date": "2025-02-08",
+          "totalRequests": 5,
+          "downloadSize": 1440580,
+          "responseTime": 109
+        },
+        {
+          "date": "2025-02-09",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-02-10",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-02-11",
+          "totalRequests": 55,
+          "downloadSize": 236351,
+          "responseTime": 32
+        },
+        {
+          "date": "2025-02-12",
+          "totalRequests": 28,
+          "downloadSize": 140695,
+          "responseTime": 104
+        },
+        {
+          "date": "2025-02-13",
+          "totalRequests": 1,
+          "downloadSize": 32837,
+          "responseTime": 60
+        },
+        {
+          "date": "2025-02-14",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-02-15",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-02-16",
+          "totalRequests": 0,
+          "downloadSize": 0,
+          "responseTime": 0
+        },
+        {
+          "date": "2025-02-17",
+          "totalRequests": 2,
+          "downloadSize": 2003927,
+          "responseTime": 165
+        }
+      ],
+      "fileTypes": [
+        {
+          "type": "CSS",
+          "ratio": 0.5244
+        },
+        {
+          "type": "JavaScript",
+          "ratio": 0.3893
+        },
+        {
+          "type": "HTML",
+          "ratio": 0.0268
+        },
+        {
+          "type": "Image",
+          "ratio": 0.0234
+        },
+        {
+          "type": "Other file type",
+          "ratio": 0.0094
+        },
+        {
+          "type": "Unknown (failed requests)",
+          "ratio": 0.0268
+        }
+      ],
+      "responses": [
+        {
+          "count": null
+        },
+        {
+          "count": null
+        },
+        {
+          "count": null
+        },
+        {
+          "count": null
+        }
+      ],
+      "botTypes": [
+        {
+          "count": null
+        },
+        {
+          "count": null
+        },
+        {
+          "count": null
+        },
+        {
+          "count": null
+        }
+      ]
+    },
+    "performance": {
+      "queries": [
+        {
+          "clicks": 77,
+          "impressions": 2911,
+          "ctr": 0.0265,
+          "position": 6.27
+        },
+        {
+          "clicks": 6,
+          "impressions": 1934,
+          "ctr": 0.0031,
+          "position": 9.57
+        },
+        {
+          "clicks": 2,
+          "impressions": 65,
+          "ctr": 0.0308,
+          "position": 10.78
+        },
+        {
+          "clicks": 2,
+          "impressions": 7,
+          "ctr": 0.2857,
+          "position": 3.43
+        },
+        {
+          "clicks": 1,
+          "impressions": 95,
+          "ctr": 0.0105,
+          "position": 24.66
+        },
+        {
+          "clicks": 1,
+          "impressions": 90,
+          "ctr": 0.0111,
+          "position": 9.44
+        },
+        {
+          "clicks": 0,
+          "impressions": 668,
+          "ctr": 0,
+          "position": 17.7
+        },
+        {
+          "clicks": 0,
+          "impressions": 251,
+          "ctr": 0,
+          "position": 36.9
+        },
+        {
+          "clicks": 0,
+          "impressions": 241,
+          "ctr": 0,
+          "position": 67.51
+        },
+        {
+          "clicks": 0,
+          "impressions": 226,
+          "ctr": 0,
+          "position": 13.01
+        },
+        {
+          "clicks": 0,
+          "impressions": 111,
+          "ctr": 0,
+          "position": 8.89
+        },
+        {
+          "clicks": 0,
+          "impressions": 86,
+          "ctr": 0,
+          "position": 8.16
+        },
+        {
+          "clicks": 0,
+          "impressions": 68,
+          "ctr": 0,
+          "position": 13.47
+        },
+        {
+          "clicks": 0,
+          "impressions": 38,
+          "ctr": 0,
+          "position": 63.11
+        },
+        {
+          "clicks": 0,
+          "impressions": 37,
+          "ctr": 0,
+          "position": 51.81
+        },
+        {
+          "clicks": 0,
+          "impressions": 31,
+          "ctr": 0,
+          "position": 49.9
+        },
+        {
+          "clicks": 0,
+          "impressions": 25,
+          "ctr": 0,
+          "position": 8.36
+        },
+        {
+          "clicks": 0,
+          "impressions": 18,
+          "ctr": 0,
+          "position": 55.17
+        },
+        {
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 12
+        },
+        {
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 11.87
+        },
+        {
+          "clicks": 0,
+          "impressions": 14,
+          "ctr": 0,
+          "position": 7.5
+        },
+        {
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 73.54
+        },
+        {
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 5.08
+        },
+        {
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 36
+        },
+        {
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 42.6
+        },
+        {
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 34.5
+        },
+        {
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 80.5
+        },
+        {
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 7.14
+        },
+        {
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 28.67
+        },
+        {
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 57.4
+        },
+        {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 8.25
+        },
+        {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 60.25
+        },
+        {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 75
+        },
+        {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 76
+        },
+        {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 15
+        },
+        {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 69.33
+        },
+        {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 10.5
+        },
+        {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 14
+        },
+        {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 18.5
+        },
+        {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 30.5
+        },
+        {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 31
+        },
+        {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 85
+        },
+        {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 87
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 17
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 24
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 31
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 32
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 69
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 79
+        },
+        {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 87
+        }
+      ],
+      "pages": [
+        {
+          "clicks": 215,
+          "impressions": 9431,
+          "ctr": 0.022799999999999997,
+          "position": 12.32
+        },
+        {
+          "clicks": 1,
+          "impressions": 570,
+          "ctr": 0.0018,
+          "position": 6.51
+        },
+        {
+          "clicks": 0,
+          "impressions": 570,
+          "ctr": 0,
+          "position": 6.51
+        },
+        {
+          "clicks": 0,
+          "impressions": 570,
+          "ctr": 0,
+          "position": 6.51
+        },
+        {
+          "clicks": 0,
+          "impressions": 26,
+          "ctr": 0,
+          "position": 16.19
+        }
+      ],
+      "countries": [
+        {
+          "country": "United States",
+          "clicks": 121,
+          "impressions": 3074,
+          "ctr": 0.0394,
+          "position": 11.63
+        },
+        {
+          "country": "India",
+          "clicks": 20,
+          "impressions": 508,
+          "ctr": 0.0394,
+          "position": 12.1
+        },
+        {
+          "country": "United Kingdom",
+          "clicks": 11,
+          "impressions": 296,
+          "ctr": 0.037200000000000004,
+          "position": 12.94
+        },
+        {
+          "country": "Australia",
+          "clicks": 7,
+          "impressions": 96,
+          "ctr": 0.0729,
+          "position": 8.43
+        },
+        {
+          "country": "Turkey",
+          "clicks": 5,
+          "impressions": 59,
+          "ctr": 0.08470000000000001,
+          "position": 14.44
+        },
+        {
+          "country": "Canada",
+          "clicks": 4,
+          "impressions": 451,
+          "ctr": 0.0089,
+          "position": 8.08
+        },
+        {
+          "country": "Costa Rica",
+          "clicks": 4,
+          "impressions": 11,
+          "ctr": 0.3636,
+          "position": 6.45
+        },
+        {
+          "country": "New Zealand",
+          "clicks": 3,
+          "impressions": 1804,
+          "ctr": 0.0017000000000000001,
+          "position": 8.73
+        },
+        {
+          "country": "Indonesia",
+          "clicks": 3,
+          "impressions": 215,
+          "ctr": 0.013999999999999999,
+          "position": 10.07
+        },
+        {
+          "country": "Pakistan",
+          "clicks": 3,
+          "impressions": 76,
+          "ctr": 0.0395,
+          "position": 9.79
+        },
+        {
+          "country": "United Arab Emirates",
+          "clicks": 3,
+          "impressions": 30,
+          "ctr": 0.1,
+          "position": 9.27
+        },
+        {
+          "country": "Germany",
+          "clicks": 2,
+          "impressions": 72,
+          "ctr": 0.0278,
+          "position": 15.81
+        },
+        {
+          "country": "Vietnam",
+          "clicks": 2,
+          "impressions": 57,
+          "ctr": 0.0351,
+          "position": 14.23
+        },
+        {
+          "country": "Egypt",
+          "clicks": 2,
+          "impressions": 44,
+          "ctr": 0.0455,
+          "position": 15.3
+        },
+        {
+          "country": "South Africa",
+          "clicks": 2,
+          "impressions": 30,
+          "ctr": 0.0667,
+          "position": 21.1
+        },
+        {
+          "country": "Nigeria",
+          "clicks": 2,
+          "impressions": 26,
+          "ctr": 0.07690000000000001,
+          "position": 10.73
+        },
+        {
+          "country": "Bulgaria",
+          "clicks": 2,
+          "impressions": 19,
+          "ctr": 0.10529999999999999,
+          "position": 14.42
+        },
+        {
+          "country": "Sri Lanka",
+          "clicks": 1,
+          "impressions": 358,
+          "ctr": 0.0028000000000000004,
+          "position": 11.66
+        },
+        {
+          "country": "Spain",
+          "clicks": 1,
+          "impressions": 47,
+          "ctr": 0.0213,
+          "position": 13.87
+        },
+        {
+          "country": "Ukraine",
+          "clicks": 1,
+          "impressions": 44,
+          "ctr": 0.0227,
+          "position": 25.52
+        },
+        {
+          "country": "Philippines",
+          "clicks": 1,
+          "impressions": 38,
+          "ctr": 0.0263,
+          "position": 10.32
+        },
+        {
+          "country": "Mexico",
+          "clicks": 1,
+          "impressions": 33,
+          "ctr": 0.030299999999999997,
+          "position": 19.64
+        },
+        {
+          "country": "Morocco",
+          "clicks": 1,
+          "impressions": 30,
+          "ctr": 0.0333,
+          "position": 10.37
+        },
+        {
+          "country": "Bangladesh",
+          "clicks": 1,
+          "impressions": 29,
+          "ctr": 0.0345,
+          "position": 18.24
+        },
+        {
+          "country": "Colombia",
+          "clicks": 1,
+          "impressions": 28,
+          "ctr": 0.035699999999999996,
+          "position": 19.43
+        },
+        {
+          "country": "Iraq",
+          "clicks": 1,
+          "impressions": 21,
+          "ctr": 0.047599999999999996,
+          "position": 23.14
+        },
+        {
+          "country": "Lithuania",
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.0526,
+          "position": 16.16
+        },
+        {
+          "country": "Portugal",
+          "clicks": 1,
+          "impressions": 18,
+          "ctr": 0.0556,
+          "position": 6.78
+        },
+        {
+          "country": "Hong Kong",
+          "clicks": 1,
+          "impressions": 13,
+          "ctr": 0.07690000000000001,
+          "position": 8.15
+        },
+        {
+          "country": "Thailand",
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.0833,
+          "position": 17.33
+        },
+        {
+          "country": "Jordan",
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.0833,
+          "position": 23.25
+        },
+        {
+          "country": "Belgium",
+          "clicks": 1,
+          "impressions": 11,
+          "ctr": 0.0909,
+          "position": 9.55
+        },
+        {
+          "country": "Uganda",
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 0.1,
+          "position": 8.2
+        },
+        {
+          "country": "Senegal",
+          "clicks": 1,
+          "impressions": 7,
+          "ctr": 0.1429,
+          "position": 3.43
+        },
+        {
+          "country": "Georgia",
+          "clicks": 1,
+          "impressions": 7,
+          "ctr": 0.1429,
+          "position": 6.71
+        },
+        {
+          "country": "Austria",
+          "clicks": 1,
+          "impressions": 6,
+          "ctr": 0.16670000000000001,
+          "position": 13.33
+        },
+        {
+          "country": "Sudan",
+          "clicks": 1,
+          "impressions": 5,
+          "ctr": 0.2,
+          "position": 5.2
+        },
+        {
+          "country": "Brazil",
+          "clicks": 0,
+          "impressions": 327,
+          "ctr": 0,
+          "position": 20.55
+        },
+        {
+          "country": "South Korea",
+          "clicks": 0,
+          "impressions": 279,
+          "ctr": 0,
+          "position": 18.41
+        },
+        {
+          "country": "Russia",
+          "clicks": 0,
+          "impressions": 263,
+          "ctr": 0,
+          "position": 21.38
+        },
+        {
+          "country": "Netherlands",
+          "clicks": 0,
+          "impressions": 126,
+          "ctr": 0,
+          "position": 14.67
+        },
+        {
+          "country": "Malaysia",
+          "clicks": 0,
+          "impressions": 69,
+          "ctr": 0,
+          "position": 16.29
+        },
+        {
+          "country": "Taiwan",
+          "clicks": 0,
+          "impressions": 56,
+          "ctr": 0,
+          "position": 17.64
+        },
+        {
+          "country": "Italy",
+          "clicks": 0,
+          "impressions": 42,
+          "ctr": 0,
+          "position": 18.19
+        },
+        {
+          "country": "Argentina",
+          "clicks": 0,
+          "impressions": 38,
+          "ctr": 0,
+          "position": 12.89
+        },
+        {
+          "country": "France",
+          "clicks": 0,
+          "impressions": 36,
+          "ctr": 0,
+          "position": 15.11
+        },
+        {
+          "country": "Poland",
+          "clicks": 0,
+          "impressions": 34,
+          "ctr": 0,
+          "position": 13.56
+        },
+        {
+          "country": "Ecuador",
+          "clicks": 0,
+          "impressions": 27,
+          "ctr": 0,
+          "position": 23
+        },
+        {
+          "country": "Singapore",
+          "clicks": 0,
+          "impressions": 24,
+          "ctr": 0,
+          "position": 10.25
+        },
+        {
+          "country": "Saudi Arabia",
+          "clicks": 0,
+          "impressions": 24,
+          "ctr": 0,
+          "position": 13.5
+        },
+        {
+          "country": "Chile",
+          "clicks": 0,
+          "impressions": 23,
+          "ctr": 0,
+          "position": 16.09
+        },
+        {
+          "country": "Sweden",
+          "clicks": 0,
+          "impressions": 21,
+          "ctr": 0,
+          "position": 16
+        },
+        {
+          "country": "Ethiopia",
+          "clicks": 0,
+          "impressions": 20,
+          "ctr": 0,
+          "position": 8.35
+        },
+        {
+          "country": "Qatar",
+          "clicks": 0,
+          "impressions": 19,
+          "ctr": 0,
+          "position": 10.21
+        },
+        {
+          "country": "Japan",
+          "clicks": 0,
+          "impressions": 18,
+          "ctr": 0,
+          "position": 14
+        },
+        {
+          "country": "Ireland",
+          "clicks": 0,
+          "impressions": 18,
+          "ctr": 0,
+          "position": 20.5
+        },
+        {
+          "country": "Kenya",
+          "clicks": 0,
+          "impressions": 17,
+          "ctr": 0,
+          "position": 12.47
+        },
+        {
+          "country": "China",
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 10.6
+        },
+        {
+          "country": "Romania",
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 12.77
+        },
+        {
+          "country": "Guatemala",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 6.17
+        },
+        {
+          "country": "Peru",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 26.92
+        },
+        {
+          "country": "Czechia",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 8.45
+        },
+        {
+          "country": "Israel",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 8.64
+        },
+        {
+          "country": "Nicaragua",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 8.73
+        },
+        {
+          "country": "Greece",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 5.5
+        },
+        {
+          "country": "Serbia",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 7.4
+        },
+        {
+          "country": "Finland",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 15.8
+        },
+        {
+          "country": "Dominican Republic",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "country": "Venezuela",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 11.11
+        },
+        {
+          "country": "Unknown Region",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 15.56
+        },
+        {
+          "country": "Algeria",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 28.56
+        },
+        {
+          "country": "Kazakhstan",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 11.62
+        },
+        {
+          "country": "Norway",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 13.25
+        },
+        {
+          "country": "Tunisia",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 15.5
+        },
+        {
+          "country": "Hungary",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 25
+        },
+        {
+          "country": "Switzerland",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 14
+        },
+        {
+          "country": "Panama",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 14.29
+        },
+        {
+          "country": "Nepal",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 31.86
+        },
+        {
+          "country": "Iran",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 25
+        },
+        {
+          "country": "Benin",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 6.6
+        },
+        {
+          "country": "Croatia",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 7.8
+        },
+        {
+          "country": "Cyprus",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 11.8
+        },
+        {
+          "country": "Slovenia",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 24.8
+        },
+        {
+          "country": "Syria",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 3.75
+        },
+        {
+          "country": "Cameroon",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 6.25
+        },
+        {
+          "country": "Puerto Rico",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 12.75
+        },
+        {
+          "country": "Mongolia",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 15.5
+        },
+        {
+          "country": "Azerbaijan",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 17.5
+        },
+        {
+          "country": "Montenegro",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 18
+        },
+        {
+          "country": "Trinidad & Tobago",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 23.75
+        },
+        {
+          "country": "Timor-Leste",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 8.33
+        },
+        {
+          "country": "Lebanon",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 9.67
+        },
+        {
+          "country": "Seychelles",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 11.33
+        },
+        {
+          "country": "Palestine",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 15.33
+        },
+        {
+          "country": "Uruguay",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 19.67
+        },
+        {
+          "country": "Slovakia",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 20.67
+        },
+        {
+          "country": "Bolivia",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 57.67
+        },
+        {
+          "country": "Bermuda",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 2
+        },
+        {
+          "country": "Namibia",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 2
+        },
+        {
+          "country": "Rwanda",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 3.5
+        },
+        {
+          "country": "Macedonia",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4.5
+        },
+        {
+          "country": "Belarus",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "country": "Denmark",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 5.5
+        },
+        {
+          "country": "Isle of Man",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 5.5
+        },
+        {
+          "country": "Grenada",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 7.5
+        },
+        {
+          "country": "El Salvador",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8.5
+        },
+        {
+          "country": "Iceland",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "country": "Kyrgyzstan",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 10.5
+        },
+        {
+          "country": "Latvia",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 21.5
+        },
+        {
+          "country": "Ghana",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 24
+        },
+        {
+          "country": "Côte d’Ivoire",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 25.5
+        },
+        {
+          "country": "Uzbekistan",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 27.5
+        },
+        {
+          "country": "Jamaica",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 47.5
+        },
+        {
+          "country": "Congo - Brazzaville",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 50.5
+        },
+        {
+          "country": "Estonia",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "country": "Zambia",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "country": "Honduras",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        },
+        {
+          "country": "Armenia",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3
+        },
+        {
+          "country": "Cambodia",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3
+        },
+        {
+          "country": "Tanzania",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3
+        },
+        {
+          "country": "Macau",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 4
+        },
+        {
+          "country": "Malawi",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 4
+        },
+        {
+          "country": "Botswana",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "country": "Fiji",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "country": "Jersey",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "country": "South Sudan",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "country": "Bahamas",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "country": "Mozambique",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "country": "Albania",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "country": "Kuwait",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "country": "Kosovo",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "country": "Guinea",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 21
+        },
+        {
+          "country": "Madagascar",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 25
+        },
+        {
+          "country": "Brunei",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 37
+        },
+        {
+          "country": "Suriname",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 38
+        },
+        {
+          "country": "Malta",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 41
+        },
+        {
+          "country": "Bosnia & Herzegovina",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 42
+        },
+        {
+          "country": "Paraguay",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 48
+        },
+        {
+          "country": "Bahrain",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 66
+        },
+        {
+          "country": "British Virgin Islands",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 68
+        },
+        {
+          "country": "Barbados",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 69
+        },
+        {
+          "country": "Antigua & Barbuda",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 82
+        },
+        {
+          "country": "Myanmar (Burma)",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 86
+        },
+        {
+          "country": "Mayotte",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 97
+        }
+      ],
+      "devices": [
+        {
+          "device": "Desktop",
+          "clicks": 133,
+          "impressions": 4220,
+          "ctr": 0.0315,
+          "position": 13.51
+        },
+        {
+          "device": "Mobile",
+          "clicks": 80,
+          "impressions": 5166,
+          "ctr": 0.0155,
+          "position": 11.38
+        },
+        {
+          "device": "Tablet",
+          "clicks": 3,
+          "impressions": 54,
+          "ctr": 0.0556,
+          "position": 7.81
+        }
+      ],
+      "dates": [
+        {
+          "date": "2025-01-31",
+          "clicks": 2,
+          "impressions": 32,
+          "ctr": 0.0625,
+          "position": 8.88
+        },
+        {
+          "date": "2025-01-30",
+          "clicks": 1,
+          "impressions": 40,
+          "ctr": 0.025,
+          "position": 8.18
+        },
+        {
+          "date": "2025-01-29",
+          "clicks": 0,
+          "impressions": 31,
+          "ctr": 0,
+          "position": 14.39
+        },
+        {
+          "date": "2025-01-28",
+          "clicks": 1,
+          "impressions": 40,
+          "ctr": 0.025,
+          "position": 14.7
+        },
+        {
+          "date": "2025-01-27",
+          "clicks": 1,
+          "impressions": 49,
+          "ctr": 0.0204,
+          "position": 10.27
+        },
+        {
+          "date": "2025-01-26",
+          "clicks": 1,
+          "impressions": 30,
+          "ctr": 0.0333,
+          "position": 15.73
+        },
+        {
+          "date": "2025-01-25",
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 0.0435,
+          "position": 12.83
+        },
+        {
+          "date": "2025-01-24",
+          "clicks": 0,
+          "impressions": 39,
+          "ctr": 0,
+          "position": 17.49
+        },
+        {
+          "date": "2025-01-23",
+          "clicks": 2,
+          "impressions": 48,
+          "ctr": 0.0417,
+          "position": 12.1
+        },
+        {
+          "date": "2025-01-22",
+          "clicks": 1,
+          "impressions": 48,
+          "ctr": 0.0208,
+          "position": 11.46
+        },
+        {
+          "date": "2025-01-21",
+          "clicks": 0,
+          "impressions": 41,
+          "ctr": 0,
+          "position": 12.73
+        },
+        {
+          "date": "2025-01-20",
+          "clicks": 1,
+          "impressions": 54,
+          "ctr": 0.018500000000000003,
+          "position": 11.85
+        },
+        {
+          "date": "2025-01-19",
+          "clicks": 0,
+          "impressions": 36,
+          "ctr": 0,
+          "position": 12.67
+        },
+        {
+          "date": "2025-01-18",
+          "clicks": 0,
+          "impressions": 25,
+          "ctr": 0,
+          "position": 14.16
+        },
+        {
+          "date": "2025-01-17",
+          "clicks": 1,
+          "impressions": 44,
+          "ctr": 0.0227,
+          "position": 10.7
+        },
+        {
+          "date": "2025-01-16",
+          "clicks": 1,
+          "impressions": 52,
+          "ctr": 0.0192,
+          "position": 8.67
+        },
+        {
+          "date": "2025-01-15",
+          "clicks": 1,
+          "impressions": 44,
+          "ctr": 0.0227,
+          "position": 10.55
+        },
+        {
+          "date": "2025-01-14",
+          "clicks": 1,
+          "impressions": 46,
+          "ctr": 0.0217,
+          "position": 12.93
+        },
+        {
+          "date": "2025-01-13",
+          "clicks": 2,
+          "impressions": 43,
+          "ctr": 0.04650000000000001,
+          "position": 12.02
+        },
+        {
+          "date": "2025-01-12",
+          "clicks": 2,
+          "impressions": 36,
+          "ctr": 0.0556,
+          "position": 13.83
+        },
+        {
+          "date": "2025-01-11",
+          "clicks": 0,
+          "impressions": 29,
+          "ctr": 0,
+          "position": 10.48
+        },
+        {
+          "date": "2025-01-10",
+          "clicks": 2,
+          "impressions": 42,
+          "ctr": 0.047599999999999996,
+          "position": 11.52
+        },
+        {
+          "date": "2025-01-09",
+          "clicks": 1,
+          "impressions": 43,
+          "ctr": 0.0233,
+          "position": 10.44
+        },
+        {
+          "date": "2025-01-08",
+          "clicks": 1,
+          "impressions": 59,
+          "ctr": 0.0169,
+          "position": 12.2
+        },
+        {
+          "date": "2025-01-07",
+          "clicks": 2,
+          "impressions": 44,
+          "ctr": 0.0455,
+          "position": 12.14
+        },
+        {
+          "date": "2025-01-06",
+          "clicks": 2,
+          "impressions": 47,
+          "ctr": 0.0426,
+          "position": 8.6
+        },
+        {
+          "date": "2025-01-05",
+          "clicks": 0,
+          "impressions": 45,
+          "ctr": 0,
+          "position": 13.11
+        },
+        {
+          "date": "2025-01-04",
+          "clicks": 0,
+          "impressions": 24,
+          "ctr": 0,
+          "position": 19.21
+        },
+        {
+          "date": "2025-01-03",
+          "clicks": 0,
+          "impressions": 45,
+          "ctr": 0,
+          "position": 13.42
+        },
+        {
+          "date": "2025-01-02",
+          "clicks": 0,
+          "impressions": 37,
+          "ctr": 0,
+          "position": 13.05
+        },
+        {
+          "date": "2025-01-01",
+          "clicks": 0,
+          "impressions": 29,
+          "ctr": 0,
+          "position": 13.79
+        },
+        {
+          "date": "2024-12-31",
+          "clicks": 0,
+          "impressions": 28,
+          "ctr": 0,
+          "position": 16.11
+        },
+        {
+          "date": "2024-12-30",
+          "clicks": 3,
+          "impressions": 41,
+          "ctr": 0.0732,
+          "position": 12.95
+        },
+        {
+          "date": "2024-12-29",
+          "clicks": 2,
+          "impressions": 37,
+          "ctr": 0.0541,
+          "position": 10.54
+        },
+        {
+          "date": "2024-12-28",
+          "clicks": 2,
+          "impressions": 29,
+          "ctr": 0.069,
+          "position": 11.59
+        },
+        {
+          "date": "2024-12-27",
+          "clicks": 0,
+          "impressions": 34,
+          "ctr": 0,
+          "position": 14.88
+        },
+        {
+          "date": "2024-12-26",
+          "clicks": 1,
+          "impressions": 46,
+          "ctr": 0.0217,
+          "position": 12.24
+        },
+        {
+          "date": "2024-12-25",
+          "clicks": 2,
+          "impressions": 34,
+          "ctr": 0.0588,
+          "position": 14.97
+        },
+        {
+          "date": "2024-12-24",
+          "clicks": 0,
+          "impressions": 21,
+          "ctr": 0,
+          "position": 18.76
+        },
+        {
+          "date": "2024-12-23",
+          "clicks": 0,
+          "impressions": 36,
+          "ctr": 0,
+          "position": 10.25
+        },
+        {
+          "date": "2024-12-22",
+          "clicks": 1,
+          "impressions": 34,
+          "ctr": 0.0294,
+          "position": 10.26
+        },
+        {
+          "date": "2024-12-21",
+          "clicks": 0,
+          "impressions": 29,
+          "ctr": 0,
+          "position": 16.38
+        },
+        {
+          "date": "2024-12-20",
+          "clicks": 1,
+          "impressions": 32,
+          "ctr": 0.031200000000000002,
+          "position": 11.66
+        },
+        {
+          "date": "2024-12-19",
+          "clicks": 2,
+          "impressions": 57,
+          "ctr": 0.0351,
+          "position": 10.82
+        },
+        {
+          "date": "2024-12-18",
+          "clicks": 0,
+          "impressions": 28,
+          "ctr": 0,
+          "position": 20.64
+        },
+        {
+          "date": "2024-12-17",
+          "clicks": 1,
+          "impressions": 43,
+          "ctr": 0.0233,
+          "position": 14.16
+        },
+        {
+          "date": "2024-12-16",
+          "clicks": 0,
+          "impressions": 41,
+          "ctr": 0,
+          "position": 15.93
+        },
+        {
+          "date": "2024-12-15",
+          "clicks": 1,
+          "impressions": 31,
+          "ctr": 0.0323,
+          "position": 17.68
+        },
+        {
+          "date": "2024-12-14",
+          "clicks": 0,
+          "impressions": 25,
+          "ctr": 0,
+          "position": 14.4
+        },
+        {
+          "date": "2024-12-13",
+          "clicks": 0,
+          "impressions": 32,
+          "ctr": 0,
+          "position": 11.5
+        },
+        {
+          "date": "2024-12-12",
+          "clicks": 0,
+          "impressions": 36,
+          "ctr": 0,
+          "position": 14.67
+        },
+        {
+          "date": "2024-12-11",
+          "clicks": 0,
+          "impressions": 39,
+          "ctr": 0,
+          "position": 12.62
+        },
+        {
+          "date": "2024-12-10",
+          "clicks": 2,
+          "impressions": 41,
+          "ctr": 0.048799999999999996,
+          "position": 10.88
+        },
+        {
+          "date": "2024-12-09",
+          "clicks": 0,
+          "impressions": 33,
+          "ctr": 0,
+          "position": 11.33
+        },
+        {
+          "date": "2024-12-08",
+          "clicks": 0,
+          "impressions": 27,
+          "ctr": 0,
+          "position": 10.56
+        },
+        {
+          "date": "2024-12-07",
+          "clicks": 0,
+          "impressions": 23,
+          "ctr": 0,
+          "position": 18.35
+        },
+        {
+          "date": "2024-12-06",
+          "clicks": 0,
+          "impressions": 31,
+          "ctr": 0,
+          "position": 11.16
+        },
+        {
+          "date": "2024-12-05",
+          "clicks": 0,
+          "impressions": 43,
+          "ctr": 0,
+          "position": 17.51
+        },
+        {
+          "date": "2024-12-04",
+          "clicks": 1,
+          "impressions": 41,
+          "ctr": 0.024399999999999998,
+          "position": 13.93
+        },
+        {
+          "date": "2024-12-03",
+          "clicks": 0,
+          "impressions": 45,
+          "ctr": 0,
+          "position": 11.84
+        },
+        {
+          "date": "2024-12-02",
+          "clicks": 0,
+          "impressions": 46,
+          "ctr": 0,
+          "position": 8.98
+        },
+        {
+          "date": "2024-12-01",
+          "clicks": 2,
+          "impressions": 31,
+          "ctr": 0.0645,
+          "position": 11.19
+        },
+        {
+          "date": "2024-11-30",
+          "clicks": 1,
+          "impressions": 24,
+          "ctr": 0.0417,
+          "position": 16.88
+        },
+        {
+          "date": "2024-11-29",
+          "clicks": 0,
+          "impressions": 24,
+          "ctr": 0,
+          "position": 9.17
+        },
+        {
+          "date": "2024-11-28",
+          "clicks": 0,
+          "impressions": 21,
+          "ctr": 0,
+          "position": 11.14
+        },
+        {
+          "date": "2024-11-27",
+          "clicks": 0,
+          "impressions": 32,
+          "ctr": 0,
+          "position": 10.94
+        },
+        {
+          "date": "2024-11-26",
+          "clicks": 1,
+          "impressions": 40,
+          "ctr": 0.025,
+          "position": 11.4
+        },
+        {
+          "date": "2024-11-25",
+          "clicks": 0,
+          "impressions": 55,
+          "ctr": 0,
+          "position": 11.36
+        },
+        {
+          "date": "2024-11-24",
+          "clicks": 0,
+          "impressions": 32,
+          "ctr": 0,
+          "position": 15.84
+        },
+        {
+          "date": "2024-11-23",
+          "clicks": 0,
+          "impressions": 28,
+          "ctr": 0,
+          "position": 13.39
+        },
+        {
+          "date": "2024-11-22",
+          "clicks": 1,
+          "impressions": 37,
+          "ctr": 0.027000000000000003,
+          "position": 14.89
+        },
+        {
+          "date": "2024-11-21",
+          "clicks": 0,
+          "impressions": 41,
+          "ctr": 0,
+          "position": 10.34
+        },
+        {
+          "date": "2024-11-20",
+          "clicks": 0,
+          "impressions": 44,
+          "ctr": 0,
+          "position": 10.57
+        },
+        {
+          "date": "2024-11-19",
+          "clicks": 0,
+          "impressions": 40,
+          "ctr": 0,
+          "position": 17.02
+        },
+        {
+          "date": "2024-11-18",
+          "clicks": 0,
+          "impressions": 52,
+          "ctr": 0,
+          "position": 12.5
+        },
+        {
+          "date": "2024-11-17",
+          "clicks": 0,
+          "impressions": 39,
+          "ctr": 0,
+          "position": 15.21
+        },
+        {
+          "date": "2024-11-16",
+          "clicks": 0,
+          "impressions": 25,
+          "ctr": 0,
+          "position": 14.44
+        },
+        {
+          "date": "2024-11-15",
+          "clicks": 1,
+          "impressions": 34,
+          "ctr": 0.0294,
+          "position": 14.56
+        },
+        {
+          "date": "2024-11-14",
+          "clicks": 0,
+          "impressions": 42,
+          "ctr": 0,
+          "position": 10.45
+        },
+        {
+          "date": "2024-11-13",
+          "clicks": 1,
+          "impressions": 38,
+          "ctr": 0.0263,
+          "position": 12.68
+        },
+        {
+          "date": "2024-11-12",
+          "clicks": 0,
+          "impressions": 34,
+          "ctr": 0,
+          "position": 16.41
+        },
+        {
+          "date": "2024-11-11",
+          "clicks": 1,
+          "impressions": 40,
+          "ctr": 0.025,
+          "position": 12.8
+        },
+        {
+          "date": "2024-11-10",
+          "clicks": 3,
+          "impressions": 43,
+          "ctr": 0.0698,
+          "position": 10.93
+        },
+        {
+          "date": "2024-11-09",
+          "clicks": 0,
+          "impressions": 26,
+          "ctr": 0,
+          "position": 11.42
+        },
+        {
+          "date": "2024-11-08",
+          "clicks": 1,
+          "impressions": 31,
+          "ctr": 0.0323,
+          "position": 13.35
+        },
+        {
+          "date": "2024-11-07",
+          "clicks": 1,
+          "impressions": 41,
+          "ctr": 0.024399999999999998,
+          "position": 9.98
+        },
+        {
+          "date": "2024-11-06",
+          "clicks": 1,
+          "impressions": 44,
+          "ctr": 0.0227,
+          "position": 8.59
+        },
+        {
+          "date": "2024-11-05",
+          "clicks": 3,
+          "impressions": 48,
+          "ctr": 0.0625,
+          "position": 13.33
+        },
+        {
+          "date": "2024-11-04",
+          "clicks": 1,
+          "impressions": 39,
+          "ctr": 0.0256,
+          "position": 10.51
+        },
+        {
+          "date": "2024-11-03",
+          "clicks": 1,
+          "impressions": 28,
+          "ctr": 0.035699999999999996,
+          "position": 14.68
+        },
+        {
+          "date": "2024-11-02",
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.0526,
+          "position": 16.47
+        },
+        {
+          "date": "2024-11-01",
+          "clicks": 0,
+          "impressions": 27,
+          "ctr": 0,
+          "position": 14.52
+        },
+        {
+          "date": "2024-10-31",
+          "clicks": 1,
+          "impressions": 34,
+          "ctr": 0.0294,
+          "position": 12.18
+        },
+        {
+          "date": "2024-10-30",
+          "clicks": 0,
+          "impressions": 45,
+          "ctr": 0,
+          "position": 13.13
+        },
+        {
+          "date": "2024-10-29",
+          "clicks": 1,
+          "impressions": 53,
+          "ctr": 0.0189,
+          "position": 11.57
+        },
+        {
+          "date": "2024-10-28",
+          "clicks": 0,
+          "impressions": 51,
+          "ctr": 0,
+          "position": 11.69
+        },
+        {
+          "date": "2024-10-27",
+          "clicks": 0,
+          "impressions": 53,
+          "ctr": 0,
+          "position": 12.04
+        },
+        {
+          "date": "2024-10-26",
+          "clicks": 2,
+          "impressions": 60,
+          "ctr": 0.0333,
+          "position": 12.38
+        },
+        {
+          "date": "2024-10-25",
+          "clicks": 0,
+          "impressions": 123,
+          "ctr": 0,
+          "position": 13.22
+        },
+        {
+          "date": "2024-10-24",
+          "clicks": 1,
+          "impressions": 79,
+          "ctr": 0.0127,
+          "position": 10.89
+        },
+        {
+          "date": "2024-10-23",
+          "clicks": 1,
+          "impressions": 39,
+          "ctr": 0.0256,
+          "position": 11.9
+        },
+        {
+          "date": "2024-10-22",
+          "clicks": 0,
+          "impressions": 36,
+          "ctr": 0,
+          "position": 14.22
+        },
+        {
+          "date": "2024-10-21",
+          "clicks": 1,
+          "impressions": 48,
+          "ctr": 0.0208,
+          "position": 8.75
+        },
+        {
+          "date": "2024-10-20",
+          "clicks": 0,
+          "impressions": 44,
+          "ctr": 0,
+          "position": 10.86
+        },
+        {
+          "date": "2024-10-19",
+          "clicks": 0,
+          "impressions": 20,
+          "ctr": 0,
+          "position": 10.2
+        },
+        {
+          "date": "2024-10-18",
+          "clicks": 1,
+          "impressions": 29,
+          "ctr": 0.0345,
+          "position": 13.55
+        },
+        {
+          "date": "2024-10-17",
+          "clicks": 2,
+          "impressions": 40,
+          "ctr": 0.05,
+          "position": 17.35
+        },
+        {
+          "date": "2024-10-16",
+          "clicks": 0,
+          "impressions": 47,
+          "ctr": 0,
+          "position": 10.15
+        },
+        {
+          "date": "2024-10-15",
+          "clicks": 1,
+          "impressions": 48,
+          "ctr": 0.0208,
+          "position": 11.44
+        },
+        {
+          "date": "2024-10-14",
+          "clicks": 0,
+          "impressions": 48,
+          "ctr": 0,
+          "position": 9.85
+        },
+        {
+          "date": "2024-10-13",
+          "clicks": 0,
+          "impressions": 39,
+          "ctr": 0,
+          "position": 10.9
+        },
+        {
+          "date": "2024-10-12",
+          "clicks": 0,
+          "impressions": 27,
+          "ctr": 0,
+          "position": 9.19
+        },
+        {
+          "date": "2024-10-11",
+          "clicks": 0,
+          "impressions": 38,
+          "ctr": 0,
+          "position": 11.53
+        },
+        {
+          "date": "2024-10-10",
+          "clicks": 0,
+          "impressions": 43,
+          "ctr": 0,
+          "position": 11.47
+        },
+        {
+          "date": "2024-10-09",
+          "clicks": 0,
+          "impressions": 51,
+          "ctr": 0,
+          "position": 14.69
+        },
+        {
+          "date": "2024-10-08",
+          "clicks": 1,
+          "impressions": 38,
+          "ctr": 0.0263,
+          "position": 14.79
+        },
+        {
+          "date": "2024-10-07",
+          "clicks": 0,
+          "impressions": 31,
+          "ctr": 0,
+          "position": 15.06
+        },
+        {
+          "date": "2024-10-06",
+          "clicks": 0,
+          "impressions": 32,
+          "ctr": 0,
+          "position": 14.34
+        },
+        {
+          "date": "2024-10-05",
+          "clicks": 0,
+          "impressions": 17,
+          "ctr": 0,
+          "position": 14.88
+        },
+        {
+          "date": "2024-10-04",
+          "clicks": 1,
+          "impressions": 24,
+          "ctr": 0.0417,
+          "position": 10.42
+        },
+        {
+          "date": "2024-10-03",
+          "clicks": 0,
+          "impressions": 39,
+          "ctr": 0,
+          "position": 16.31
+        },
+        {
+          "date": "2024-10-02",
+          "clicks": 0,
+          "impressions": 35,
+          "ctr": 0,
+          "position": 13.94
+        },
+        {
+          "date": "2024-10-01",
+          "clicks": 1,
+          "impressions": 32,
+          "ctr": 0.031200000000000002,
+          "position": 9.5
+        },
+        {
+          "date": "2024-09-30",
+          "clicks": 0,
+          "impressions": 43,
+          "ctr": 0,
+          "position": 10.93
+        },
+        {
+          "date": "2024-09-29",
+          "clicks": 0,
+          "impressions": 26,
+          "ctr": 0,
+          "position": 26.46
+        },
+        {
+          "date": "2024-09-28",
+          "clicks": 0,
+          "impressions": 23,
+          "ctr": 0,
+          "position": 13.96
+        },
+        {
+          "date": "2024-09-27",
+          "clicks": 1,
+          "impressions": 30,
+          "ctr": 0.0333,
+          "position": 16.67
+        },
+        {
+          "date": "2024-09-26",
+          "clicks": 0,
+          "impressions": 30,
+          "ctr": 0,
+          "position": 18.17
+        },
+        {
+          "date": "2024-09-25",
+          "clicks": 1,
+          "impressions": 36,
+          "ctr": 0.0278,
+          "position": 15.11
+        },
+        {
+          "date": "2024-09-24",
+          "clicks": 0,
+          "impressions": 28,
+          "ctr": 0,
+          "position": 16.57
+        },
+        {
+          "date": "2024-09-23",
+          "clicks": 1,
+          "impressions": 50,
+          "ctr": 0.02,
+          "position": 10.72
+        },
+        {
+          "date": "2024-09-22",
+          "clicks": 1,
+          "impressions": 35,
+          "ctr": 0.0286,
+          "position": 11.14
+        },
+        {
+          "date": "2024-09-21",
+          "clicks": 1,
+          "impressions": 22,
+          "ctr": 0.0455,
+          "position": 25.23
+        },
+        {
+          "date": "2024-09-20",
+          "clicks": 0,
+          "impressions": 33,
+          "ctr": 0,
+          "position": 14.79
+        },
+        {
+          "date": "2024-09-19",
+          "clicks": 2,
+          "impressions": 50,
+          "ctr": 0.04,
+          "position": 11.84
+        },
+        {
+          "date": "2024-09-18",
+          "clicks": 0,
+          "impressions": 46,
+          "ctr": 0,
+          "position": 16.37
+        },
+        {
+          "date": "2024-09-17",
+          "clicks": 1,
+          "impressions": 43,
+          "ctr": 0.0233,
+          "position": 11.77
+        },
+        {
+          "date": "2024-09-16",
+          "clicks": 3,
+          "impressions": 50,
+          "ctr": 0.06,
+          "position": 14.6
+        },
+        {
+          "date": "2024-09-15",
+          "clicks": 2,
+          "impressions": 32,
+          "ctr": 0.0625,
+          "position": 9.59
+        },
+        {
+          "date": "2024-09-14",
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 0.0435,
+          "position": 15.65
+        },
+        {
+          "date": "2024-09-13",
+          "clicks": 1,
+          "impressions": 37,
+          "ctr": 0.027000000000000003,
+          "position": 14.78
+        },
+        {
+          "date": "2024-09-12",
+          "clicks": 1,
+          "impressions": 37,
+          "ctr": 0.027000000000000003,
+          "position": 11.62
+        },
+        {
+          "date": "2024-09-11",
+          "clicks": 2,
+          "impressions": 41,
+          "ctr": 0.048799999999999996,
+          "position": 11.22
+        },
+        {
+          "date": "2024-09-10",
+          "clicks": 0,
+          "impressions": 29,
+          "ctr": 0,
+          "position": 16.55
+        },
+        {
+          "date": "2024-09-09",
+          "clicks": 0,
+          "impressions": 48,
+          "ctr": 0,
+          "position": 10.17
+        },
+        {
+          "date": "2024-09-08",
+          "clicks": 1,
+          "impressions": 24,
+          "ctr": 0.0417,
+          "position": 11.33
+        },
+        {
+          "date": "2024-09-07",
+          "clicks": 0,
+          "impressions": 24,
+          "ctr": 0,
+          "position": 16.67
+        },
+        {
+          "date": "2024-09-06",
+          "clicks": 0,
+          "impressions": 26,
+          "ctr": 0,
+          "position": 15.81
+        },
+        {
+          "date": "2024-09-05",
+          "clicks": 0,
+          "impressions": 42,
+          "ctr": 0,
+          "position": 12.81
+        },
+        {
+          "date": "2024-09-04",
+          "clicks": 2,
+          "impressions": 40,
+          "ctr": 0.05,
+          "position": 11.75
+        },
+        {
+          "date": "2024-09-03",
+          "clicks": 0,
+          "impressions": 60,
+          "ctr": 0,
+          "position": 8.62
+        },
+        {
+          "date": "2024-09-02",
+          "clicks": 0,
+          "impressions": 29,
+          "ctr": 0,
+          "position": 12
+        },
+        {
+          "date": "2024-09-01",
+          "clicks": 0,
+          "impressions": 37,
+          "ctr": 0,
+          "position": 9.11
+        },
+        {
+          "date": "2024-08-31",
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 8.87
+        },
+        {
+          "date": "2024-08-30",
+          "clicks": 3,
+          "impressions": 28,
+          "ctr": 0.10710000000000001,
+          "position": 16.07
+        },
+        {
+          "date": "2024-08-29",
+          "clicks": 0,
+          "impressions": 42,
+          "ctr": 0,
+          "position": 12.14
+        },
+        {
+          "date": "2024-08-28",
+          "clicks": 1,
+          "impressions": 35,
+          "ctr": 0.0286,
+          "position": 9.86
+        },
+        {
+          "date": "2024-08-27",
+          "clicks": 0,
+          "impressions": 29,
+          "ctr": 0,
+          "position": 9.79
+        },
+        {
+          "date": "2024-08-26",
+          "clicks": 1,
+          "impressions": 38,
+          "ctr": 0.0263,
+          "position": 8.24
+        },
+        {
+          "date": "2024-08-25",
+          "clicks": 0,
+          "impressions": 22,
+          "ctr": 0,
+          "position": 8.41
+        },
+        {
+          "date": "2024-08-24",
+          "clicks": 0,
+          "impressions": 21,
+          "ctr": 0,
+          "position": 10.24
+        },
+        {
+          "date": "2024-08-23",
+          "clicks": 0,
+          "impressions": 26,
+          "ctr": 0,
+          "position": 13.88
+        },
+        {
+          "date": "2024-08-22",
+          "clicks": 0,
+          "impressions": 41,
+          "ctr": 0,
+          "position": 11.41
+        },
+        {
+          "date": "2024-08-21",
+          "clicks": 1,
+          "impressions": 35,
+          "ctr": 0.0286,
+          "position": 15.06
+        },
+        {
+          "date": "2024-08-20",
+          "clicks": 1,
+          "impressions": 44,
+          "ctr": 0.0227,
+          "position": 12.73
+        },
+        {
+          "date": "2024-08-19",
+          "clicks": 0,
+          "impressions": 30,
+          "ctr": 0,
+          "position": 12.17
+        },
+        {
+          "date": "2024-08-18",
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 0.0435,
+          "position": 16.91
+        },
+        {
+          "date": "2024-08-17",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 19.08
+        },
+        {
+          "date": "2024-08-16",
+          "clicks": 2,
+          "impressions": 23,
+          "ctr": 0.087,
+          "position": 19.17
+        },
+        {
+          "date": "2024-08-15",
+          "clicks": 1,
+          "impressions": 20,
+          "ctr": 0.05,
+          "position": 13.15
+        },
+        {
+          "date": "2024-08-14",
+          "clicks": 0,
+          "impressions": 30,
+          "ctr": 0,
+          "position": 9.2
+        },
+        {
+          "date": "2024-08-13",
+          "clicks": 2,
+          "impressions": 29,
+          "ctr": 0.069,
+          "position": 13.69
+        },
+        {
+          "date": "2024-08-12",
+          "clicks": 0,
+          "impressions": 34,
+          "ctr": 0,
+          "position": 10.24
+        },
+        {
+          "date": "2024-08-11",
+          "clicks": 0,
+          "impressions": 20,
+          "ctr": 0,
+          "position": 10.15
+        },
+        {
+          "date": "2024-08-10",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 23.64
+        },
+        {
+          "date": "2024-08-09",
+          "clicks": 0,
+          "impressions": 20,
+          "ctr": 0,
+          "position": 15.1
+        },
+        {
+          "date": "2024-08-08",
+          "clicks": 1,
+          "impressions": 37,
+          "ctr": 0.027000000000000003,
+          "position": 9.43
+        },
+        {
+          "date": "2024-08-07",
+          "clicks": 0,
+          "impressions": 33,
+          "ctr": 0,
+          "position": 8.55
+        },
+        {
+          "date": "2024-08-06",
+          "clicks": 1,
+          "impressions": 26,
+          "ctr": 0.0385,
+          "position": 10.38
+        },
+        {
+          "date": "2024-08-05",
+          "clicks": 0,
+          "impressions": 19,
+          "ctr": 0,
+          "position": 10.42
+        },
+        {
+          "date": "2024-08-04",
+          "clicks": 2,
+          "impressions": 15,
+          "ctr": 0.1333,
+          "position": 11.2
+        },
+        {
+          "date": "2024-08-03",
+          "clicks": 0,
+          "impressions": 23,
+          "ctr": 0,
+          "position": 19.7
+        },
+        {
+          "date": "2024-08-02",
+          "clicks": 2,
+          "impressions": 21,
+          "ctr": 0.09519999999999999,
+          "position": 8.14
+        },
+        {
+          "date": "2024-08-01",
+          "clicks": 1,
+          "impressions": 37,
+          "ctr": 0.027000000000000003,
+          "position": 8.62
+        },
+        {
+          "date": "2024-07-31",
+          "clicks": 1,
+          "impressions": 11,
+          "ctr": 0.0909,
+          "position": 7.64
+        },
+        {
+          "date": "2024-07-30",
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.0526,
+          "position": 12.68
+        },
+        {
+          "date": "2024-07-29",
+          "clicks": 0,
+          "impressions": 17,
+          "ctr": 0,
+          "position": 16.41
+        },
+        {
+          "date": "2024-07-28",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 9.83
+        },
+        {
+          "date": "2024-07-27",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 18.25
+        },
+        {
+          "date": "2024-07-26",
+          "clicks": 0,
+          "impressions": 14,
+          "ctr": 0,
+          "position": 18.43
+        },
+        {
+          "date": "2024-07-25",
+          "clicks": 1,
+          "impressions": 18,
+          "ctr": 0.0556,
+          "position": 9.89
+        },
+        {
+          "date": "2024-07-24",
+          "clicks": 0,
+          "impressions": 21,
+          "ctr": 0,
+          "position": 10.81
+        },
+        {
+          "date": "2024-07-23",
+          "clicks": 0,
+          "impressions": 23,
+          "ctr": 0,
+          "position": 6.65
+        },
+        {
+          "date": "2024-07-22",
+          "clicks": 0,
+          "impressions": 21,
+          "ctr": 0,
+          "position": 8.71
+        },
+        {
+          "date": "2024-07-21",
+          "clicks": 1,
+          "impressions": 28,
+          "ctr": 0.035699999999999996,
+          "position": 11.07
+        },
+        {
+          "date": "2024-07-20",
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 18.12
+        },
+        {
+          "date": "2024-07-19",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 14.75
+        },
+        {
+          "date": "2024-07-18",
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 0.0588,
+          "position": 13.24
+        },
+        {
+          "date": "2024-07-17",
+          "clicks": 1,
+          "impressions": 22,
+          "ctr": 0.0455,
+          "position": 22.23
+        },
+        {
+          "date": "2024-07-16",
+          "clicks": 3,
+          "impressions": 22,
+          "ctr": 0.1364,
+          "position": 9.14
+        },
+        {
+          "date": "2024-07-15",
+          "clicks": 2,
+          "impressions": 19,
+          "ctr": 0.10529999999999999,
+          "position": 9.47
+        },
+        {
+          "date": "2024-07-14",
+          "clicks": 0,
+          "impressions": 14,
+          "ctr": 0,
+          "position": 12.93
+        },
+        {
+          "date": "2024-07-13",
+          "clicks": 2,
+          "impressions": 12,
+          "ctr": 0.16670000000000001,
+          "position": 9
+        },
+        {
+          "date": "2024-07-12",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 18.18
+        },
+        {
+          "date": "2024-07-11",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 17.4
+        },
+        {
+          "date": "2024-07-10",
+          "clicks": 3,
+          "impressions": 17,
+          "ctr": 0.1765,
+          "position": 8.59
+        },
+        {
+          "date": "2024-07-09",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 12
+        },
+        {
+          "date": "2024-07-08",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 22.57
+        },
+        {
+          "date": "2024-07-07",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 11.58
+        },
+        {
+          "date": "2024-07-06",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 7.33
+        },
+        {
+          "date": "2024-07-05",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 16.71
+        },
+        {
+          "date": "2024-07-04",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 21.14
+        },
+        {
+          "date": "2024-07-03",
+          "clicks": 2,
+          "impressions": 23,
+          "ctr": 0.087,
+          "position": 16.48
+        },
+        {
+          "date": "2024-07-02",
+          "clicks": 2,
+          "impressions": 17,
+          "ctr": 0.1176,
+          "position": 10.24
+        },
+        {
+          "date": "2024-07-01",
+          "clicks": 1,
+          "impressions": 8,
+          "ctr": 0.125,
+          "position": 20.88
+        },
+        {
+          "date": "2024-06-30",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 11.33
+        },
+        {
+          "date": "2024-06-29",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 9.91
+        },
+        {
+          "date": "2024-06-28",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 21
+        },
+        {
+          "date": "2024-06-27",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 8.89
+        },
+        {
+          "date": "2024-06-26",
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 0.0588,
+          "position": 12.53
+        },
+        {
+          "date": "2024-06-25",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 22.5
+        },
+        {
+          "date": "2024-06-24",
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 11.5
+        },
+        {
+          "date": "2024-06-23",
+          "clicks": 0,
+          "impressions": 14,
+          "ctr": 0,
+          "position": 11.93
+        },
+        {
+          "date": "2024-06-22",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 13.89
+        },
+        {
+          "date": "2024-06-21",
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 10.6
+        },
+        {
+          "date": "2024-06-20",
+          "clicks": 1,
+          "impressions": 16,
+          "ctr": 0.0625,
+          "position": 12.06
+        },
+        {
+          "date": "2024-06-19",
+          "clicks": 0,
+          "impressions": 17,
+          "ctr": 0,
+          "position": 11
+        },
+        {
+          "date": "2024-06-18",
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.0833,
+          "position": 9.33
+        },
+        {
+          "date": "2024-06-17",
+          "clicks": 0,
+          "impressions": 19,
+          "ctr": 0,
+          "position": 10.58
+        },
+        {
+          "date": "2024-06-16",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 11.9
+        },
+        {
+          "date": "2024-06-15",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 9.4
+        },
+        {
+          "date": "2024-06-14",
+          "clicks": 1,
+          "impressions": 11,
+          "ctr": 0.0909,
+          "position": 10.82
+        },
+        {
+          "date": "2024-06-13",
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.0833,
+          "position": 8.25
+        },
+        {
+          "date": "2024-06-12",
+          "clicks": 1,
+          "impressions": 21,
+          "ctr": 0.047599999999999996,
+          "position": 8.95
+        },
+        {
+          "date": "2024-06-11",
+          "clicks": 0,
+          "impressions": 23,
+          "ctr": 0,
+          "position": 9.17
+        },
+        {
+          "date": "2024-06-10",
+          "clicks": 0,
+          "impressions": 20,
+          "ctr": 0,
+          "position": 10.8
+        },
+        {
+          "date": "2024-06-09",
+          "clicks": 1,
+          "impressions": 11,
+          "ctr": 0.0909,
+          "position": 7.09
+        },
+        {
+          "date": "2024-06-08",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 22.2
+        },
+        {
+          "date": "2024-06-07",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 8.75
+        },
+        {
+          "date": "2024-06-06",
+          "clicks": 2,
+          "impressions": 9,
+          "ctr": 0.22219999999999998,
+          "position": 6
+        },
+        {
+          "date": "2024-06-05",
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 6.85
+        },
+        {
+          "date": "2024-06-04",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 19
+        },
+        {
+          "date": "2024-06-03",
+          "clicks": 3,
+          "impressions": 27,
+          "ctr": 0.11109999999999999,
+          "position": 11.26
+        },
+        {
+          "date": "2024-06-02",
+          "clicks": 0,
+          "impressions": 14,
+          "ctr": 0,
+          "position": 8.71
+        },
+        {
+          "date": "2024-06-01",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 6.12
+        },
+        {
+          "date": "2024-05-31",
+          "clicks": 0,
+          "impressions": 19,
+          "ctr": 0,
+          "position": 7.95
+        },
+        {
+          "date": "2024-05-30",
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 0.0435,
+          "position": 11.83
+        },
+        {
+          "date": "2024-05-29",
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 10.38
+        },
+        {
+          "date": "2024-05-28",
+          "clicks": 0,
+          "impressions": 22,
+          "ctr": 0,
+          "position": 11.95
+        },
+        {
+          "date": "2024-05-27",
+          "clicks": 0,
+          "impressions": 23,
+          "ctr": 0,
+          "position": 9.7
+        },
+        {
+          "date": "2024-05-26",
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07139999999999999,
+          "position": 17
+        },
+        {
+          "date": "2024-05-25",
+          "clicks": 0,
+          "impressions": 14,
+          "ctr": 0,
+          "position": 15.79
+        },
+        {
+          "date": "2024-05-24",
+          "clicks": 0,
+          "impressions": 18,
+          "ctr": 0,
+          "position": 11.94
+        },
+        {
+          "date": "2024-05-23",
+          "clicks": 0,
+          "impressions": 43,
+          "ctr": 0,
+          "position": 12.02
+        },
+        {
+          "date": "2024-05-22",
+          "clicks": 2,
+          "impressions": 26,
+          "ctr": 0.07690000000000001,
+          "position": 15.58
+        },
+        {
+          "date": "2024-05-21",
+          "clicks": 0,
+          "impressions": 21,
+          "ctr": 0,
+          "position": 17.05
+        },
+        {
+          "date": "2024-05-20",
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 14.94
+        },
+        {
+          "date": "2024-05-19",
+          "clicks": 0,
+          "impressions": 20,
+          "ctr": 0,
+          "position": 19.55
+        },
+        {
+          "date": "2024-05-18",
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 11.27
+        },
+        {
+          "date": "2024-05-17",
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07139999999999999,
+          "position": 8.86
+        },
+        {
+          "date": "2024-05-16",
+          "clicks": 1,
+          "impressions": 18,
+          "ctr": 0.0556,
+          "position": 15.28
+        },
+        {
+          "date": "2024-05-15",
+          "clicks": 0,
+          "impressions": 20,
+          "ctr": 0,
+          "position": 11.2
+        },
+        {
+          "date": "2024-05-14",
+          "clicks": 1,
+          "impressions": 15,
+          "ctr": 0.0667,
+          "position": 11.6
+        },
+        {
+          "date": "2024-05-13",
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 0.0588,
+          "position": 14.94
+        },
+        {
+          "date": "2024-05-12",
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 26.08
+        },
+        {
+          "date": "2024-05-11",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 10.8
+        },
+        {
+          "date": "2024-05-10",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 9.86
+        },
+        {
+          "date": "2024-05-09",
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 10.4
+        },
+        {
+          "date": "2024-05-08",
+          "clicks": 0,
+          "impressions": 14,
+          "ctr": 0,
+          "position": 22.21
+        },
+        {
+          "date": "2024-05-07",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 13.91
+        },
+        {
+          "date": "2024-05-06",
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07139999999999999,
+          "position": 7.57
+        },
+        {
+          "date": "2024-05-05",
+          "clicks": 0,
+          "impressions": 24,
+          "ctr": 0,
+          "position": 18.25
+        },
+        {
+          "date": "2024-05-04",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 22.44
+        },
+        {
+          "date": "2024-05-03",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 12
+        },
+        {
+          "date": "2024-05-02",
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 11.73
+        },
+        {
+          "date": "2024-05-01",
+          "clicks": 1,
+          "impressions": 16,
+          "ctr": 0.0625,
+          "position": 12.5
+        },
+        {
+          "date": "2024-04-30",
+          "clicks": 1,
+          "impressions": 16,
+          "ctr": 0.0625,
+          "position": 11.12
+        },
+        {
+          "date": "2024-04-29",
+          "clicks": 0,
+          "impressions": 20,
+          "ctr": 0,
+          "position": 7.25
+        },
+        {
+          "date": "2024-04-28",
+          "clicks": 1,
+          "impressions": 13,
+          "ctr": 0.07690000000000001,
+          "position": 10.62
+        },
+        {
+          "date": "2024-04-27",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 14.42
+        },
+        {
+          "date": "2024-04-26",
+          "clicks": 1,
+          "impressions": 22,
+          "ctr": 0.0455,
+          "position": 12.14
+        },
+        {
+          "date": "2024-04-25",
+          "clicks": 2,
+          "impressions": 21,
+          "ctr": 0.09519999999999999,
+          "position": 12.05
+        },
+        {
+          "date": "2024-04-24",
+          "clicks": 0,
+          "impressions": 14,
+          "ctr": 0,
+          "position": 20.93
+        },
+        {
+          "date": "2024-04-23",
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 13.2
+        },
+        {
+          "date": "2024-04-22",
+          "clicks": 2,
+          "impressions": 12,
+          "ctr": 0.16670000000000001,
+          "position": 14.83
+        },
+        {
+          "date": "2024-04-21",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 24.12
+        },
+        {
+          "date": "2024-04-20",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 13.43
+        },
+        {
+          "date": "2024-04-19",
+          "clicks": 2,
+          "impressions": 10,
+          "ctr": 0.2,
+          "position": 22.6
+        },
+        {
+          "date": "2024-04-18",
+          "clicks": 1,
+          "impressions": 21,
+          "ctr": 0.047599999999999996,
+          "position": 16.14
+        },
+        {
+          "date": "2024-04-17",
+          "clicks": 3,
+          "impressions": 17,
+          "ctr": 0.1765,
+          "position": 16.71
+        },
+        {
+          "date": "2024-04-16",
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.0526,
+          "position": 12.79
+        },
+        {
+          "date": "2024-04-15",
+          "clicks": 2,
+          "impressions": 19,
+          "ctr": 0.10529999999999999,
+          "position": 10.47
+        },
+        {
+          "date": "2024-04-14",
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 21.19
+        },
+        {
+          "date": "2024-04-13",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 21.62
+        },
+        {
+          "date": "2024-04-12",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 13.91
+        },
+        {
+          "date": "2024-04-11",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 21.09
+        },
+        {
+          "date": "2024-04-10",
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 16.33
+        },
+        {
+          "date": "2024-04-09",
+          "clicks": 0,
+          "impressions": 14,
+          "ctr": 0,
+          "position": 13.64
+        },
+        {
+          "date": "2024-04-08",
+          "clicks": 1,
+          "impressions": 15,
+          "ctr": 0.0667,
+          "position": 13.33
+        },
+        {
+          "date": "2024-04-07",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 13.5
+        },
+        {
+          "date": "2024-04-06",
+          "clicks": 1,
+          "impressions": 7,
+          "ctr": 0.1429,
+          "position": 12.57
+        },
+        {
+          "date": "2024-04-05",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 21.5
+        },
+        {
+          "date": "2024-04-04",
+          "clicks": 1,
+          "impressions": 18,
+          "ctr": 0.0556,
+          "position": 17.11
+        },
+        {
+          "date": "2024-04-03",
+          "clicks": 1,
+          "impressions": 16,
+          "ctr": 0.0625,
+          "position": 13.81
+        },
+        {
+          "date": "2024-04-02",
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 12
+        },
+        {
+          "date": "2024-04-01",
+          "clicks": 2,
+          "impressions": 17,
+          "ctr": 0.1176,
+          "position": 9.94
+        },
+        {
+          "date": "2024-03-31",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 16.82
+        },
+        {
+          "date": "2024-03-30",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 18.25
+        },
+        {
+          "date": "2024-03-29",
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 12.85
+        },
+        {
+          "date": "2024-03-28",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 24
+        },
+        {
+          "date": "2024-03-27",
+          "clicks": 1,
+          "impressions": 15,
+          "ctr": 0.0667,
+          "position": 15
+        },
+        {
+          "date": "2024-03-26",
+          "clicks": 0,
+          "impressions": 17,
+          "ctr": 0,
+          "position": 10.59
+        },
+        {
+          "date": "2024-03-25",
+          "clicks": 0,
+          "impressions": 23,
+          "ctr": 0,
+          "position": 6.22
+        },
+        {
+          "date": "2024-03-24",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 9.4
+        },
+        {
+          "date": "2024-03-23",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 10.5
+        },
+        {
+          "date": "2024-03-22",
+          "clicks": 0,
+          "impressions": 14,
+          "ctr": 0,
+          "position": 11
+        },
+        {
+          "date": "2024-03-21",
+          "clicks": 0,
+          "impressions": 19,
+          "ctr": 0,
+          "position": 7.32
+        },
+        {
+          "date": "2024-03-20",
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07139999999999999,
+          "position": 7.43
+        },
+        {
+          "date": "2024-03-19",
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.0526,
+          "position": 16.05
+        },
+        {
+          "date": "2024-03-18",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 7.6
+        },
+        {
+          "date": "2024-03-17",
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 0.0588,
+          "position": 6.65
+        },
+        {
+          "date": "2024-03-16",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 4.14
+        },
+        {
+          "date": "2024-03-15",
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.0833,
+          "position": 8.67
+        },
+        {
+          "date": "2024-03-14",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 7.36
+        },
+        {
+          "date": "2024-03-13",
+          "clicks": 0,
+          "impressions": 19,
+          "ctr": 0,
+          "position": 9.95
+        },
+        {
+          "date": "2024-03-12",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 14.5
+        },
+        {
+          "date": "2024-03-11",
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 0.11109999999999999,
+          "position": 6.78
+        },
+        {
+          "date": "2024-03-10",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 7.67
+        },
+        {
+          "date": "2024-03-09",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 7.5
+        },
+        {
+          "date": "2024-03-08",
+          "clicks": 2,
+          "impressions": 12,
+          "ctr": 0.16670000000000001,
+          "position": 5.17
+        },
+        {
+          "date": "2024-03-07",
+          "clicks": 1,
+          "impressions": 13,
+          "ctr": 0.07690000000000001,
+          "position": 6.69
+        },
+        {
+          "date": "2024-03-06",
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 6.38
+        },
+        {
+          "date": "2024-03-05",
+          "clicks": 3,
+          "impressions": 23,
+          "ctr": 0.1304,
+          "position": 6.17
+        },
+        {
+          "date": "2024-03-04",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 8.83
+        },
+        {
+          "date": "2024-03-03",
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 5.77
+        },
+        {
+          "date": "2024-03-02",
+          "clicks": 2,
+          "impressions": 7,
+          "ctr": 0.2857,
+          "position": 4.43
+        },
+        {
+          "date": "2024-03-01",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 7.5
+        },
+        {
+          "date": "2024-02-29",
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 0.1,
+          "position": 10.1
+        },
+        {
+          "date": "2024-02-28",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 13.88
+        },
+        {
+          "date": "2024-02-27",
+          "clicks": 0,
+          "impressions": 18,
+          "ctr": 0,
+          "position": 8.39
+        },
+        {
+          "date": "2024-02-26",
+          "clicks": 1,
+          "impressions": 15,
+          "ctr": 0.0667,
+          "position": 8.33
+        },
+        {
+          "date": "2024-02-25",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 6.56
+        },
+        {
+          "date": "2024-02-24",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 19
+        },
+        {
+          "date": "2024-02-23",
+          "clicks": 2,
+          "impressions": 9,
+          "ctr": 0.22219999999999998,
+          "position": 12.67
+        },
+        {
+          "date": "2024-02-22",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 8.25
+        },
+        {
+          "date": "2024-02-21",
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 0.0588,
+          "position": 11
+        },
+        {
+          "date": "2024-02-20",
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 8.2
+        },
+        {
+          "date": "2024-02-19",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 8.7
+        },
+        {
+          "date": "2024-02-18",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 10.5
+        },
+        {
+          "date": "2024-02-17",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 9.71
+        },
+        {
+          "date": "2024-02-16",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 7.2
+        },
+        {
+          "date": "2024-02-15",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 17
+        },
+        {
+          "date": "2024-02-14",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "date": "2024-02-13",
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 8.08
+        },
+        {
+          "date": "2024-02-12",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 6.75
+        },
+        {
+          "date": "2024-02-11",
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 8.56
+        },
+        {
+          "date": "2024-02-10",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 24.25
+        },
+        {
+          "date": "2024-02-09",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 16
+        },
+        {
+          "date": "2024-02-08",
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 7.33
+        },
+        {
+          "date": "2024-02-07",
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 0.1,
+          "position": 6.4
+        },
+        {
+          "date": "2024-02-06",
+          "clicks": 1,
+          "impressions": 18,
+          "ctr": 0.0556,
+          "position": 8.28
+        },
+        {
+          "date": "2024-02-05",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "date": "2024-02-04",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 5.55
+        },
+        {
+          "date": "2024-02-03",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "date": "2024-02-02",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 7.71
+        },
+        {
+          "date": "2024-02-01",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 4.8
+        },
+        {
+          "date": "2024-01-31",
+          "clicks": 1,
+          "impressions": 11,
+          "ctr": 0.0909,
+          "position": 5.55
+        },
+        {
+          "date": "2024-01-30",
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 0.1,
+          "position": 6.1
+        },
+        {
+          "date": "2024-01-29",
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 6.69
+        },
+        {
+          "date": "2024-01-28",
+          "clicks": 1,
+          "impressions": 7,
+          "ctr": 0.1429,
+          "position": 5.86
+        },
+        {
+          "date": "2024-01-27",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 5.62
+        },
+        {
+          "date": "2024-01-26",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "date": "2024-01-25",
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 0.11109999999999999,
+          "position": 15.56
+        },
+        {
+          "date": "2024-01-24",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 4.33
+        },
+        {
+          "date": "2024-01-23",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 7.57
+        },
+        {
+          "date": "2024-01-22",
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 6.6
+        },
+        {
+          "date": "2024-01-21",
+          "clicks": 1,
+          "impressions": 5,
+          "ctr": 0.2,
+          "position": 7.6
+        },
+        {
+          "date": "2024-01-20",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 13.5
+        },
+        {
+          "date": "2024-01-19",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 5.5
+        },
+        {
+          "date": "2024-01-18",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 6.91
+        },
+        {
+          "date": "2024-01-17",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 7.17
+        },
+        {
+          "date": "2024-01-16",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 6.9
+        },
+        {
+          "date": "2024-01-15",
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 0.11109999999999999,
+          "position": 7.89
+        },
+        {
+          "date": "2024-01-14",
+          "clicks": 0,
+          "impressions": 18,
+          "ctr": 0,
+          "position": 13.44
+        },
+        {
+          "date": "2024-01-13",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 4.5
+        },
+        {
+          "date": "2024-01-12",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4.5
+        },
+        {
+          "date": "2024-01-11",
+          "clicks": 1,
+          "impressions": 8,
+          "ctr": 0.125,
+          "position": 5.5
+        },
+        {
+          "date": "2024-01-10",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 7.12
+        },
+        {
+          "date": "2024-01-09",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 13.38
+        },
+        {
+          "date": "2024-01-08",
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07139999999999999,
+          "position": 5.43
+        },
+        {
+          "date": "2024-01-07",
+          "clicks": 0,
+          "impressions": 17,
+          "ctr": 0,
+          "position": 5.18
+        },
+        {
+          "date": "2024-01-06",
+          "clicks": 1,
+          "impressions": 5,
+          "ctr": 0.2,
+          "position": 3.6
+        },
+        {
+          "date": "2024-01-05",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 5.82
+        },
+        {
+          "date": "2024-01-04",
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 5.94
+        },
+        {
+          "date": "2024-01-03",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 5.08
+        },
+        {
+          "date": "2024-01-02",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 5.78
+        },
+        {
+          "date": "2024-01-01",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 5.5
+        }
+      ]
+    }
+  }
+}
