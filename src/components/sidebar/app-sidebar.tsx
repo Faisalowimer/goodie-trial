@@ -4,7 +4,7 @@ import * as React from "react"
 import { NavUser } from "@/components/sidebar/nav-user"
 import { NavMain } from "@/components/sidebar/nav-main"
 import { CompanyInfo } from "./company-info"
-import { SquareTerminal } from "lucide-react"
+import { Bot, SquareTerminal } from "lucide-react"
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip"
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar } from "@/components/ui/sidebar"
 import Image from "next/image"
@@ -25,6 +25,12 @@ const data = {
       title: "Dashboard",
       url: "/",
       icon: SquareTerminal,
+      isActive: true,
+    },
+    {
+      title: "AI Dashboard",
+      url: "/ai-dashboard",
+      icon: Bot,
       isActive: true,
     },
   ],
